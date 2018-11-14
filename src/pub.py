@@ -32,6 +32,10 @@ class MyCtx():
     project_id     = ''
     env_id         = ''
     mchn_id        = ''
+    dta_name       = ''
+    rule_name      = ''
+    dta_id         = ''
+    rule_id        = ''
     ##################################################################
     new_ala_name = ''
     new_svc_name = ''

@@ -43,7 +43,7 @@ def check_sys_user():
     list1 = MyCtx.cursorX.fetchall()
 
     if len(list1) > 0:
-        log_debug('has user %s', my_user)
+        # log_debug('has user %s', my_user)
         return 0
 
     sql = "insert into est_user_mng_new values('%s', '%s', '%s', '%s', '%s', '%s', '%s', '%s', '%s')" % \
@@ -193,6 +193,131 @@ def dist_generate_res_desc(_table, _seq):
     suffix = dist_generate_suffix(_seq)
 
     return col_name, suffix
+
+
+
+def dist_get_project_id(_project_name):
+    sql = "select project_id from est_project where project_name='%s'" % (_project_name)
+    MyCtx.cursorX.execute(sql)
+
+    list1 = MyCtx.cursorX.fetchall()
+
+    # only 1 line actually
+    project_id  = ''
+    for row in list1:
+        project_id  = row['project_id'].strip()
+        log_debug('project: %s => %s', _project_name, project_id)
+
+    return project_id
+
+
+def dist_get_env_id(_env_name):
+    sql = "select env_id from est_env_mng where env_name='%s'" % (_env_name)
+    MyCtx.cursorX.execute(sql)
+
+    list1 = MyCtx.cursorX.fetchall()
+
+    # only 1 line actually
+    env_id  = ''
+    for row in list1:
+        env_id  = row['env_id'].strip()
+        log_debug('env: %s => %s', _env_name, env_id)
+
+    return env_id
+
+
+def dist_get_mchn_id(_mchn_name):
+    sql = "select mchn_id from est_mchn_mng where mchn_name='%s'" % (_mchn_name)
+    MyCtx.cursorX.execute(sql)
+
+    list1 = MyCtx.cursorX.fetchall()
+
+    # only 1 line actually
+    mchn_id  = ''
+    for row in list1:
+        mchn_id  = row['mchn_id'].strip()
+        log_debug('mchn: %s => %s', _mchn_name, mchn_id)
+
+    return mchn_id
+
+
+def dist_get_dta_id(_dta_name):
+    sql = "select dta_id from est_dta where dta_name='%s'" % (_dta_name)
+    MyCtx.cursorX.execute(sql)
+
+    list1 = MyCtx.cursorX.fetchall()
+
+    # only 1 line actually
+    dta_id  = ''
+    for row in list1:
+        dta_id  = row['dta_id'].strip()
+        log_debug('dta: %s => %s', _dta_name, dta_id)
+
+    return dta_id
+
+
+def dist_get_ala_id(_ala_name):
+    sql = "select sub_bus_id from est_sub_bus where sub_bus_name='%s'" % (_ala_name)
+    log_debug('%s', sql)
+    MyCtx.cursorX.execute(sql)
+
+    list1 = MyCtx.cursorX.fetchall()
+
+    # only 1 line actually
+    ala_id  = ''
+    for row in list1:
+        ala_id  = row['sub_bus_id'].strip()
+        log_debug('ala: %s => %s', _ala_name, ala_id)
+
+    return ala_id
+
+
+def dist_get_svc_id(_svc_name):
+    sql = "select service_id from est_svc_logic where svc_name='%s'" % (_svc_name)
+    log_debug('%s', sql)
+    MyCtx.cursorX.execute(sql)
+
+    list1 = MyCtx.cursorX.fetchall()
+
+    # only 1 line actually
+    svc_id  = ''
+    for row in list1:
+        svc_id  = row['service_id'].strip()
+        log_debug('svc: %s => %s', _svc_name, svc_id)
+
+    return svc_id
+
+
+
+def dist_get_next_serial_no(_dta_id, _rule_id):
+    sql = "select isnull(max(serial_no),0)+1 next_id from est_route_entrance where src_dta_id='%s' and rule_id='%s'" % (_dta_id, _rule_id)
+    log_debug('%s', sql)
+    MyCtx.cursorX.execute(sql)
+
+    list1 = MyCtx.cursorX.fetchall()
+
+    # only 1 line actually
+    next_id  = ''
+    for row in list1:
+        next_id  = str(row['next_id'])
+        log_debug('serial: %s, %s => %s', _dta_id, _rule_id, next_id)
+
+    return next_id
+
+
+def dist_get_rule_id(_dta_id, _rule_name):
+    sql = "select rule_id from est_route_rule where src_dta_id='%s' and rule_name='%s'" % (_dta_id, _rule_name)
+    MyCtx.cursorX.execute(sql)
+
+    list1 = MyCtx.cursorX.fetchall()
+
+    # only 1 line actually
+    rule_id  = ''
+    for row in list1:
+        rule_id  = row['rule_id'].strip()
+        log_debug('rule: %s => %s', _rule_name, rule_id)
+
+    return rule_id
 
 
 def dist_check_ala_exist(_ala_name, _start, _last):
@@ -669,7 +794,7 @@ def dist_set_object_num(_obj, _seq, _inst_num, _inst_max):
     if len(list2) == 0:
         # new, let's insert
         log_debug('its new, lets insert')
-        sql = "insert est_dta_mchn_mng (obj_id, type, project_id, env_id, mchn_id, inst_num, max_inst, cmd_parm) values ('%s', '%s', '%s', '%s', '%s', '%s', '%s', '%s')" % (obj_id, obj_type, project_id, env_id, mchn_id, _inst_num, _inst_max, '')
+        sql = "insert into est_dta_mchn_mng (obj_id, type, project_id, env_id, mchn_id, inst_num, max_inst, cmd_parm) values ('%s', '%s', '%s', '%s', '%s', '%s', '%s', '%s')" % (obj_id, obj_type, project_id, env_id, mchn_id, _inst_num, _inst_max, '')
     elif len(list2) == 1:
         # update, let's update
         log_debug('already exist, lets update')
@@ -684,80 +809,73 @@ def dist_set_object_num(_obj, _seq, _inst_num, _inst_max):
     return 0
 
 
+def dist_import_route_one(_list):
 
-def dist_get_project_id(_project_name):
-    sql = "select project_id from est_project where project_name='%s'" % (_project_name)
-    MyCtx.cursorX.execute(sql)
+    rv = 0
 
-    list1 = MyCtx.cursorX.fetchall()
+    sql = ''
 
-    # only 1 line actually
-    project_id  = ''
-    for row in list1:
-        project_id  = row['project_id'].strip()
-        log_debug('project: %s => %s', _project_name, project_id)
+    src_dta_id = MyCtx.dta_id
+    rule_id    = MyCtx.rule_id
 
-    return project_id
+    serial_no  = '' # TODO
+    dst_ala_id = '' # TODO
+    dst_svc_id = '' # TODO
 
 
-def dist_get_env_id(_env_name):
-    sql = "select env_id from est_env_mng where env_name='%s'" % (_env_name)
-    MyCtx.cursorX.execute(sql)
+    action = _list[0]
+    match  = _list[1]
 
-    list1 = MyCtx.cursorX.fetchall()
+    log_debug('action: %s', action)
 
-    # only 1 line actually
-    env_id  = ''
-    for row in list1:
-        env_id  = row['env_id'].strip()
-        log_debug('env: %s => %s', _env_name, env_id)
+    if action == 'ADD':
+        dst_ala = _list[2]
+        dst_svc = _list[3]
+        desc    = _list[4]
+        log_debug('ADD: [%s] => [%s, %s, %s]', match, dst_ala, dst_svc, desc)
 
-    return env_id
+        serial_no   = dist_get_next_serial_no(src_dta_id, rule_id)
+        if len(serial_no) == 0:
+            log_error('error: dist_get_next_serial_no: %s, %s', src_dta_id, rule_id)
+            return -1
 
+        dst_ala_id  = dist_get_ala_id(dst_ala)
+        if len(dst_ala_id) == 0:
+            log_error('error: dist_get_ala_id: %s', dst_ala)
+            return -1
 
-def dist_get_mchn_id(_mchn_name):
-    sql = "select mchn_id from est_mchn_mng where mchn_name='%s'" % (_mchn_name)
-    MyCtx.cursorX.execute(sql)
+        dst_svc_id  = dist_get_svc_id(dst_svc)
+        if len(dst_svc_id) == 0:
+            log_error('error: dist_get_svc_id: %s', dst_svc)
+            return -1
 
-    list1 = MyCtx.cursorX.fetchall()
+        sql = "insert into est_route_entrance (src_dta_id, rule_id, serial_no, entrance_desc, match_expression, dest_dta_id, dest_type, svc_id, node_id, resp_flag, node_svc_name) values ('%s', '%s', '%s', '%s', '%s', '%s', '%s', '%s', '%s', '%s', '%s')" % (src_dta_id, rule_id, serial_no, desc, match, dst_ala_id, 'ALA', dst_svc_id, '', 'Y', '')
+        log_debug('%s', sql)
+    elif action == 'DEL':
+        log_debug('DEL: TODO')
+    else:
+        return -1
 
-    # only 1 line actually
-    mchn_id  = ''
-    for row in list1:
-        mchn_id  = row['mchn_id'].strip()
-        log_debug('mchn: %s => %s', _mchn_name, mchn_id)
-
-    return mchn_id
-
-
-def dist_get_dta_id(_dta_name):
-    sql = "select dta_id from est_dta where dta_name='%s'" % (_dta_name)
-    MyCtx.cursorX.execute(sql)
-
-    list1 = MyCtx.cursorX.fetchall()
-
-    # only 1 line actually
-    dta_id  = ''
-    for row in list1:
-        dta_id  = row['dta_id'].strip()
-        log_debug('dta: %s => %s', _dta_name, dta_id)
-
-    return dta_id
+    return 0
 
 
-def dist_get_rule_id(_dta_id, _rule_name):
-    sql = "select rule_id from est_route_rule where src_dta_id='%s' and rule_name='%s'" % (_dta_id, _rule_name)
-    MyCtx.cursorX.execute(sql)
+def dist_import_route_file(_route_file):
+    rv = 0
 
-    list1 = MyCtx.cursorX.fetchall()
+    fo = open(_route_file, "r")
 
-    # only 1 line actually
-    rule_id  = ''
-    for row in list1:
-        rule_id  = row['rule_id'].strip()
-        log_debug('rule: %s => %s', _rule_name, rule_id)
+    for line in fo.readlines():
+        line = line.strip()
+        log_debug('-' * 80)
+        elem_list = line.split(', ')
+        rv = dist_import_route_one(elem_list)
+        if rv < 0:
+            log_error('error: dist_import_route_one')
+            break
 
-    return rule_id
+    fo.close()
+
+    return rv
 
 
 def dist_save(_sql_list):
@@ -946,12 +1064,16 @@ def dist_import_route():
     if len(dta_id) == 0:
         log_error('error: dist_get_dta_id')
         return -1
+    MyCtx.dta_name  = dta_name
+    MyCtx.dta_id    = dta_id
 
     # get RULE-id
     rule_id = dist_get_rule_id(dta_id, route_name)
     if len(rule_id) == 0:
         log_error('error: dist_get_rule_id')
         return -1
+    MyCtx.rule_name = route_name
+    MyCtx.rule_id   = rule_id
 
     # project-name => project-id
     project_id = dist_get_project_id(project)
@@ -962,14 +1084,10 @@ def dist_import_route():
     MyCtx.project_id   = project_id
   
 
-    fo = open(route_file, "r")
-
-    for line in fo.readlines():
-        log_debug('%s', line.strip())
-
-    fo.close()
-
-    # TODO
+    rv = dist_import_route_file(route_file)
+    if rv < 0:
+        log_error('error: dist_import_route_file')
+        return rv
 
     dist_save(MyCtx.sql_content)
     MyCtx.connX.commit()
@@ -1011,8 +1129,9 @@ def dist_init():
 
     MyCtx.input_job = job
 
-    MyCtx.input_ala_name = sai_conf_get(job, 'ALA_NAME')
-    log_debug('ala-name: %s', MyCtx.input_ala_name)
+    if job == SVC_JOB or job == ALA_JOB or job == NUM_JOB:
+        MyCtx.input_ala_name = sai_conf_get(job, 'ALA_NAME')
+        log_debug('ala-name: %s', MyCtx.input_ala_name)
 
     if job == SVC_JOB:
         MyCtx.input_svc_name = sai_conf_get(job, 'SVC_NAME')

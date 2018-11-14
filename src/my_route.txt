@@ -1,2 +1,2 @@
-ADD, ^XXX$, TPP_QRY_34, IPAY_ROU_34, some-descX
-ADD, ^XXX$, TPP_QRY_35, IPAY_ROU_35, some-descY
+ADD, ^XXX$, TPP_QRY_01, TPP_108_01, some-descX
+ADD, ^XXX$, TPP_QRY_02, TASK_ESP_DEAL_01, some-descY
