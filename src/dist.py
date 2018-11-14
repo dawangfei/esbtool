@@ -60,12 +60,20 @@ def dist_execute_and_record(_sql):
     MyCtx.cursorX.execute(_sql)
 
 
+def dist_strip_list(_list):
+
+    for i in range(len(_list)):
+        _list[i] = _list[i].strip()
+
+    return _list
+
+
 # input:  'IPAY_QRY_500, svc2, svc3'
 # output: 'IPAY_QRY_500','svc2','svc3'
 def dist_generate_where_in(_svc_logic_buf):
     lst = []
 
-    for item in _svc_logic_buf.split(', '):
+    for item in _svc_logic_buf.split(','):
         buf = "'" + item.strip() + "'"
         lst.append(buf)
 
@@ -305,6 +313,46 @@ def dist_get_next_serial_no(_dta_id, _rule_id):
     return next_id
 
 
+def dist_svc_belongs_ala(_svc_name, _ala_name):
+    ala_relation_id = ''
+    svc_relation_id = ''
+
+    # ALA relation-id
+    sql = "select project_id+bus_id+sub_bus_id relation_id from est_sub_bus where sub_bus_name='%s'" % (_ala_name)
+    log_debug('%s', sql)
+    MyCtx.cursorX.execute(sql)
+    list1 = MyCtx.cursorX.fetchall()
+    # only 1 line actually
+    for row in list1:
+        ala_relation_id = str(row['relation_id'])
+        log_debug('belong-ala: %s => %s', _ala_name, ala_relation_id)
+
+    if len(ala_relation_id) == 0:
+        log_error('error: invalid ALA: %s', _ala_name)
+        return False
+
+
+    # SVC relation-id
+    sql = "select relation_id from est_svc_logic where svc_name='%s'" % (_svc_name)
+    log_debug('%s', sql)
+    MyCtx.cursorX.execute(sql)
+    list1 = MyCtx.cursorX.fetchall()
+    # only 1 line actually
+    for row in list1:
+        svc_relation_id = str(row['relation_id'])
+        log_debug('belong-svc: %s => %s', _ala_name, ala_relation_id)
+
+    if len(svc_relation_id) == 0:
+        log_error('error: invalid SVC: %s', _svc_name)
+        return False
+
+    if ala_relation_id != svc_relation_id:
+        log_error('error: invalid belong: svc(%s, %s) -- ala(%s, %s)', _svc_name, svc_relation_id, _ala_name, ala_relation_id)
+        return False
+
+    return True
+
+
 def dist_get_rule_id(_dta_id, _rule_name):
     sql = "select rule_id from est_route_rule where src_dta_id='%s' and rule_name='%s'" % (_dta_id, _rule_name)
     MyCtx.cursorX.execute(sql)
@@ -335,8 +383,9 @@ def dist_check_ala_exist(_ala_name, _start, _last):
 
 
 def dist_check_svc_exist(_svc_names):
-    svc_list = _svc_names.split(', ')
+    svc_list = _svc_names.split(',')
     for svc_name in svc_list:
+        svc_name = svc_name.strip()
         log_debug('PRE-check svc -- [%s]', svc_name)
         sql = "select service_id from est_svc_logic where svc_name = '%s'" % (svc_name)
         MyCtx.cursorX.execute(sql)
@@ -818,9 +867,9 @@ def dist_import_route_one(_list):
     src_dta_id = MyCtx.dta_id
     rule_id    = MyCtx.rule_id
 
-    serial_no  = '' # TODO
-    dst_ala_id = '' # TODO
-    dst_svc_id = '' # TODO
+    serial_no  = '' # 0, 1, 2 ... n
+    dst_ala_id = ''
+    dst_svc_id = ''
 
 
     action = _list[0]
@@ -842,21 +891,35 @@ def dist_import_route_one(_list):
         dst_ala_id  = dist_get_ala_id(dst_ala)
         if len(dst_ala_id) == 0:
             log_error('error: dist_get_ala_id: %s', dst_ala)
+            print('error: ALA(%s) not exist' % dst_ala)
             return -1
 
         dst_svc_id  = dist_get_svc_id(dst_svc)
         if len(dst_svc_id) == 0:
             log_error('error: dist_get_svc_id: %s', dst_svc)
+            print('error: SVC(%s) not exist' % dst_svc)
+            return -1
+
+        if not dist_svc_belongs_ala(dst_svc, dst_ala):
+            log_error('error: dist_svc_belongs_ala: %s, %s', dst_svc, dst_ala)
+            print('error: SVC(%s) not belongs ALA(%s)' % (dst_svc, dst_ala))
             return -1
 
         sql = "insert into est_route_entrance (src_dta_id, rule_id, serial_no, entrance_desc, match_expression, dest_dta_id, dest_type, svc_id, node_id, resp_flag, node_svc_name) values ('%s', '%s', '%s', '%s', '%s', '%s', '%s', '%s', '%s', '%s', '%s')" % (src_dta_id, rule_id, serial_no, desc, match, dst_ala_id, 'ALA', dst_svc_id, '', 'Y', '')
         log_debug('%s', sql)
     elif action == 'DEL':
-        log_debug('DEL: TODO')
+        log_error('DEL: dont support')
+        print('error: dont support DEL')
+        return -1
     else:
+        log_error('DEL: invalid action: %s', action)
         return -1
 
+    if len(sql) > 0:
+        dist_execute_and_record(sql)
+
     return 0
+
 
 
 def dist_import_route_file(_route_file):
@@ -867,7 +930,8 @@ def dist_import_route_file(_route_file):
     for line in fo.readlines():
         line = line.strip()
         log_debug('-' * 80)
-        elem_list = line.split(', ')
+        elem_list = line.split(',')
+        dist_strip_list(elem_list)
         rv = dist_import_route_one(elem_list)
         if rv < 0:
             log_error('error: dist_import_route_one')
@@ -1092,7 +1156,7 @@ def dist_import_route():
     dist_save(MyCtx.sql_content)
     MyCtx.connX.commit()
 
-    print('nice: update %d sql succeeds' % len(MyCtx.sql_content))
+    print('nice: insert %d sql succeeds' % len(MyCtx.sql_content))
 
     return 0
 
@@ -1118,9 +1182,9 @@ def dist_init():
             print('error: invalid job: [%s]' % job)
     else:
         print('error: not support: %s' % args)
-        job = SVC_JOB
         job = ALA_JOB
         job = NUM_JOB
+        job = SVC_JOB
         job = RUT_JOB
         # return -1
 
