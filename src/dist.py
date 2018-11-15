@@ -16,6 +16,7 @@ ALA_JOB = 'DUP_ALA'
 SVC_JOB = 'DUP_SVC'
 NUM_JOB = 'SET_NUM'
 RUT_JOB = 'IMP_RUT'
+PROC_JOB = 'SVC_PROC'
 
 # OBJECT: ala, dta
 ALA_OBJ = 'A'
@@ -942,6 +943,66 @@ def dist_import_route_file(_route_file):
     return rv
 
 
+
+def dist_svc_proc_one(_list):
+
+    rv = 0
+
+    sql = ''
+
+    src_dta_id = MyCtx.dta_id
+    rule_id    = MyCtx.rule_id
+
+    serial_no  = '' # 0, 1, 2 ... n
+    dst_ala_id = ''
+    dst_svc_id = ''
+
+
+    action      = _list[0]
+    svc_name    = _list[1]
+    proc_type   = _list[2]
+
+    log_debug('action: %s - %s - %s', action, svc_name, proc_type)
+
+    if action == 'MOD':
+        expr    = _list[3]
+        log_debug('MOD: [%s] => [%s]', svc_name, expr)
+
+        log_debug('%s', sql)
+    elif action == 'DEL':
+        log_error('DEL: dont support')
+        print('error: dont support DEL')
+        return -1
+    else:
+        log_error('DEL: invalid action: %s', action)
+        return -1
+
+    if len(sql) > 0:
+        dist_execute_and_record(sql)
+
+    return 0
+
+
+def dist_svc_proc_file(_action_file):
+    rv = 0
+
+    fo = open(_action_file, "r")
+
+    for line in fo.readlines():
+        line = line.strip()
+        log_debug('-' * 80)
+        elem_list = line.split(',,,')
+        dist_strip_list(elem_list)
+        rv = dist_svc_proc_one(elem_list)
+        if rv < 0:
+            log_error('error: dist_svc_proc_one')
+            break
+
+    fo.close()
+
+    return rv
+
+
 def dist_save(_sql_list):
     file_name = "sql.%s.txt" % (sai_get_date_time())
     file_path = '%s/data/%s' % (os.path.dirname(os.path.realpath(__file__)), file_name)
@@ -1036,6 +1097,7 @@ def dist_dup_svc(_ala_name, _svc_logics):
 
     return 0
 
+
 def dist_set_num():
 
     log_debug('dist_set_num: --- RES and LOG ---')
@@ -1062,12 +1124,10 @@ def dist_set_num():
         print('-- %s_%s --' % (obj_name, dist_generate_suffix(seq)))
     #raw_input("Press any to continue") # TODO
 
-    # TODO: ala-exist: 'TPP_QRY'
+    # ala-exist: 'TPP_QRY'
     if dist_check_ala_exist(obj_name, start, last) < 0:
         log_error('error: dist_check_ala_exist')
         return -1
-
-    # TODO: check dta exits
 
     # project-name => project-id
     project_id = dist_get_project_id(project)
@@ -1120,10 +1180,8 @@ def dist_import_route():
 
     log_debug('route-file: %s', route_file)
 
-    # TODO: check svc belongs ala.
 
-
-    # get DTA-id
+    # get src DTA-id
     dta_id = dist_get_dta_id(dta_name)
     if len(dta_id) == 0:
         log_error('error: dist_get_dta_id')
@@ -1139,18 +1197,32 @@ def dist_import_route():
     MyCtx.rule_name = route_name
     MyCtx.rule_id   = rule_id
 
-    # project-name => project-id
-    project_id = dist_get_project_id(project)
-    if len(project_id) == 0:
-        log_error('error: dist_get_project_id')
-        return -1
-    MyCtx.project_name = project
-    MyCtx.project_id   = project_id
-  
 
     rv = dist_import_route_file(route_file)
     if rv < 0:
         log_error('error: dist_import_route_file')
+        return rv
+
+    dist_save(MyCtx.sql_content)
+    MyCtx.connX.commit()
+
+    print('nice: insert %d sql succeeds' % len(MyCtx.sql_content))
+
+    return 0
+
+
+def dist_set_proc():
+
+    log_debug('dist_set_proc: --- RES and LOG ---')
+
+    action_file  = sai_conf_get(PROC_JOB, "PROC_FILE")
+
+    log_debug('proc-action-file: %s', action_file)
+
+
+    rv = dist_svc_proc_file(action_file)
+    if rv < 0:
+        log_error('error: dist_svc_proc_file')
         return rv
 
     dist_save(MyCtx.sql_content)
@@ -1177,6 +1249,8 @@ def dist_init():
             pass
         elif job == RUT_JOB:
             pass
+        elif job == PROC_JOB:
+            pass
         else:
             log_error('error: invalid job: [%s]', job)
             print('error: invalid job: [%s]' % job)
@@ -1186,6 +1260,7 @@ def dist_init():
         job = NUM_JOB
         job = SVC_JOB
         job = RUT_JOB
+        job = PROC_JOB
         # return -1
 
     conf_file = 'my.conf'
@@ -1244,6 +1319,9 @@ def dist_doit(_job):
     elif _job == RUT_JOB:
         log_debug('to import route')
         rv = dist_import_route()
+    elif _job == PROC_JOB:
+        log_debug('to set_proc')
+        rv = dist_set_proc()
     else:
         log_error('error: invalid job: %s', _job)
         rv = -1
