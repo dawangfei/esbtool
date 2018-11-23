@@ -22,6 +22,8 @@ PROC_JOB = 'SVC_PROC'
 ALA_OBJ = 'A'
 DTA_OBJ = 'D'
 
+SYS_USER = 'yase'
+
 
 def check_dir():
 
@@ -36,7 +38,7 @@ def check_dir():
 
 
 def check_sys_user():
-    my_user = 'yase'
+    my_user = SYS_USER
 
     sql = "select user_name from est_user_mng_new where user_name = '%s'" % (my_user)
 
@@ -48,7 +50,7 @@ def check_sys_user():
         return 0
 
     sql = "insert into est_user_mng_new values('%s', '%s', '%s', '%s', '%s', '%s', '%s', '%s', '%s')" % \
-           (my_user, 'sys-user', '1', 'yase', '1', ' ', '20180711-123456', '20180711-123456', '111111111100000000111111100000000000000000000000000000')
+           (my_user, 'sys-user', '1', my_user, '1', ' ', '20180717-123456', '20180717-123456', '111111111100000000111111100000000000000000000000000000')
     log_debug('create new user %s', my_user)
     MyCtx.cursorX.execute(sql)
     MyCtx.connX.commit()
@@ -567,9 +569,9 @@ def dist_generate_insert_cm(_table, _key_value, _seq):
 
         # use system user
         if data_row.has_key('crt_user'):
-            data_row['crt_user'] = 'yase'
+            data_row['crt_user'] = SYS_USER
         if data_row.has_key('lst_mod_user'):
-            data_row['lst_mod_user'] = 'yase'
+            data_row['lst_mod_user'] = SYS_USER
 
         # use new relation-id
         if data_row.has_key('relation_id'):
@@ -931,6 +933,11 @@ def dist_import_route_file(_route_file):
     for line in fo.readlines():
         line = line.strip()
         log_debug('-' * 80)
+
+        if len(line) == 0 or line[0] == '#':
+            log_debug('ignore this line: %s', line)
+            continue
+
         elem_list = line.split(',')
         dist_strip_list(elem_list)
         rv = dist_import_route_one(elem_list)
@@ -942,6 +949,106 @@ def dist_import_route_file(_route_file):
 
     return rv
 
+
+def dist_svc_proc_get_column(_input):
+    column = ''
+
+    col_map = {
+        'BEFORE_PROC':'svc_pre_proc',
+        'SUCC_PROC':'svc_succ_proc',
+        'FAIL_PROC':'svc_lost_proc'
+    }
+
+    if col_map.has_key(_input):
+        column = col_map[_input]
+
+
+    return column
+
+
+
+def dist_svc_proc_one_cm_insert(_exprs, _proc_id):
+    sql_list = []
+
+    table = 'est_event_expr'
+
+    buf1 = 'event_expr_id, event_expr_type, serial_no, event_expr_proc, event_expr_desc, comp_id'
+
+    expr_list = _exprs.split('|')
+    dist_strip_list(expr_list)
+
+    for seq in range(len(expr_list)):
+        expr = str(expr_list[seq])
+        expr = expr.replace("'", "''")
+        if len(expr) == 0:
+            break
+        serial_no = seq + 1
+
+        log_debug('event: [%d] => [%s]', seq, expr)
+
+        buf2 = "'%s', '%s', '%d', '%s', '%s', '%s'" % (_proc_id, '0', serial_no, expr, '', '')
+
+        sql = "insert into %s (%s) values (%s)" % (table, buf1, buf2)
+        sql_list.append(sql)
+
+    return sql_list
+
+
+def dist_svc_proc_one_new(_exprs, _column, _svc_name):
+    log_debug('new-exprs:   %s', _exprs)
+    log_debug('new-column:  %s', _column)
+    log_debug('new-svc:     %s', _svc_name)
+
+    sql_list = []
+    table = 'est_event_expr'
+
+    ###################################################################
+    # STEP1: generate new resource-id
+    event_col, proc_id = dist_generate_res_id(table, MyCtx.cursorX)
+    if len(proc_id) <= 0:
+        log_info('error: no new event id: %s', table)
+        raise Exception
+
+    # STEP2: insert new
+    insert_list = dist_svc_proc_one_cm_insert(_exprs, proc_id)
+    sql_list    += insert_list
+
+    # STEP3: update to meta column
+    table = 'est_svc_logic'
+    curr_date_time = sai_get_date_time()
+    curr_user = SYS_USER
+    sql = "update %s set %s='%s', lst_mod_date_time='%s', lst_mod_user='%s' where svc_name = '%s'" % \
+    (table, _column, proc_id, curr_date_time, curr_user, _svc_name)
+    sql_list.append(sql)
+
+    # for one in sql_list:
+    #     log_debug('%s', one)
+
+    return sql_list
+
+
+def dist_svc_proc_one_old(_exprs, _proc_id):
+    sql_list = []
+
+    log_debug('old-exprs:   %s', _exprs)
+    log_debug('old-procid:  %s', _proc_id)
+
+
+    table = 'est_event_expr'
+
+    # STEP1: delete old
+    sql = "delete from %s where event_expr_id = '%s'" % (table, _proc_id)
+    # log_debug('old-delete: %s', sql)
+    sql_list.append(sql)
+
+    # STEP2: insert new
+    insert_list = dist_svc_proc_one_cm_insert(_exprs, _proc_id)
+    sql_list    += insert_list
+
+    # for one in sql_list:
+    #     log_debug('%s', one)
+
+    return sql_list
 
 
 def dist_svc_proc_one(_list):
@@ -956,29 +1063,67 @@ def dist_svc_proc_one(_list):
     serial_no  = '' # 0, 1, 2 ... n
     dst_ala_id = ''
     dst_svc_id = ''
+    sql_list   = []
 
+    if len(_list) < 3:
+        log_error('error: invalid input: %d', len(_list))
+        return -1
 
     action      = _list[0]
     svc_name    = _list[1]
     proc_type   = _list[2]
 
-    log_debug('action: %s - %s - %s', action, svc_name, proc_type)
+    column = dist_svc_proc_get_column(proc_type)
+    if len(column) == 0:
+        log_debug('error: invalid type %s', proc_type)
+        print('error: invalid type: %s' % proc_type)
+        return -1
+
+    log_debug('action: %s - %s - %s - %s', action, svc_name, proc_type, column)
+
+    # get PROC-id
+    sql = "select %s proc_id from est_svc_logic where svc_name='%s'" % (column, svc_name)
+    MyCtx.cursorX.execute(sql)
+    list1 = MyCtx.cursorX.fetchall()
+    proc_id  = ''
+    for row in list1:
+        proc_id = row['proc_id'].strip()
+        log_debug('proc: %s => %s', column, proc_id)
 
     if action == 'MOD':
-        expr    = _list[3]
-        log_debug('MOD: [%s] => [%s]', svc_name, expr)
+        exprs   = _list[3]
+        log_debug('MOD: [%s] => [%s]', svc_name, exprs)
 
-        log_debug('%s', sql)
+        if len(proc_id) == 0:
+            # not exist
+            log_debug('proc-id not exist, create it')
+            # 1: generate a new proc-id
+            # 2: insert into expr
+            # 3: update to record
+            sql_list = dist_svc_proc_one_new(exprs, column, svc_name)
+        else:
+            # exist
+            log_debug('proc-id already exist, delete and insert: %s', proc_id)
+            # 1: delete all data under this proc-id
+            # 2: insert into expr
+            sql_list = dist_svc_proc_one_old(exprs, proc_id)
+        log_debug('MOD process done: %d', len(sql_list))
     elif action == 'DEL':
-        log_error('DEL: dont support')
-        print('error: dont support DEL')
-        return -1
+        log_debug('DEL: [%s] => [%s]', svc_name, column)
+        if len(proc_id) > 0:
+            sql = "delete from est_event_expr where event_expr_id = '%s'" % (proc_id)
+            sql_list.append(sql)
+        else:
+            log_error('error: event not exist: %s - %s', svc_name, proc_type)
+            return -1
     else:
-        log_error('DEL: invalid action: %s', action)
+        log_error('invalid action: %s', action)
         return -1
 
-    if len(sql) > 0:
-        dist_execute_and_record(sql)
+    if len(sql_list) > 0:
+        for sql in sql_list:
+            log_debug('proc-sql: %s', sql)
+            dist_execute_and_record(sql)
 
     return 0
 
@@ -991,6 +1136,11 @@ def dist_svc_proc_file(_action_file):
     for line in fo.readlines():
         line = line.strip()
         log_debug('-' * 80)
+
+        if len(line) == 0 or line[0] == '#':
+            log_debug('ignore this line: %s', line)
+            continue
+
         elem_list = line.split(',,,')
         dist_strip_list(elem_list)
         rv = dist_svc_proc_one(elem_list)
@@ -999,6 +1149,9 @@ def dist_svc_proc_file(_action_file):
             break
 
     fo.close()
+    log_debug('-' * 80)
+    log_debug('-' * 80)
+    log_debug('-' * 80)
 
     return rv
 
@@ -1216,19 +1369,19 @@ def dist_set_proc():
     log_debug('dist_set_proc: --- RES and LOG ---')
 
     action_file  = sai_conf_get(PROC_JOB, "PROC_FILE")
-
     log_debug('proc-action-file: %s', action_file)
-
 
     rv = dist_svc_proc_file(action_file)
     if rv < 0:
         log_error('error: dist_svc_proc_file')
         return rv
+    log_debug('set-svc-proc process file done')
 
     dist_save(MyCtx.sql_content)
     MyCtx.connX.commit()
+    log_debug('set-svc-proc commit done')
 
-    print('nice: insert %d sql succeeds' % len(MyCtx.sql_content))
+    print('nice: execute %d sql succeeds' % len(MyCtx.sql_content))
 
     return 0
 
