@@ -1392,7 +1392,7 @@ def dist_init():
     args = sai_get_args()
 
     job  = ''
-    if len(args) == '1':
+    if len(args) == 1:
         job = args[0]
         if job == ALA_JOB:
             pass
@@ -1407,14 +1407,23 @@ def dist_init():
         else:
             log_error('error: invalid job: [%s]', job)
             print('error: invalid job: [%s]' % job)
+            job = ''
     else:
         print('error: not support: %s' % args)
-        job = ALA_JOB
-        job = NUM_JOB
-        job = SVC_JOB
-        job = RUT_JOB
-        job = PROC_JOB
-        # return -1
+        #job = ALA_JOB
+        #job = NUM_JOB
+        #job = SVC_JOB
+        #job = RUT_JOB
+        #job = PROC_JOB
+
+    if len(job) == 0:
+        print('only [%s, %s, %s, %s, %s] available' % (ALA_JOB, SVC_JOB, NUM_JOB, RUT_JOB, PROC_JOB))
+        print('please try: dist.exe %s' % ALA_JOB)
+        print('            dist.exe %s' % SVC_JOB)
+        print('            dist.exe %s' % NUM_JOB)
+        print('            dist.exe %s' % RUT_JOB)
+        print('            dist.exe %s' % PROC_JOB)
+        return ''
 
     conf_file = 'my.conf'
     MyConf.conf_path = conf_file
@@ -1445,8 +1454,9 @@ def dist_init():
 
 def dist_done():
     # finally
-    MyCtx.connX.rollback()
-    MyCtx.connX.close()
+    if MyCtx.connX is not None:
+        MyCtx.connX.rollback()
+        MyCtx.connX.close()
 
     return 0
 
@@ -1486,6 +1496,9 @@ def dist_run():
     rv = 0
 
     job = dist_init()
+    if len(job) == 0:
+        print('error: init failure')
+        return -1
 
     rv = dist_doit(job)
     if rv < 0:
