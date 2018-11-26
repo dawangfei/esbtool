@@ -1190,7 +1190,7 @@ def dist_dup_ala(_ala_name):
     print('will generate the following ALA')
     for seq in range(start, last+1):
         print('-- %s_%s --' % (_ala_name, dist_generate_suffix(seq)))
-    #raw_input("Press any to continue")
+    raw_input("Press any to continue")
 
     for seq in range(start, last+1):
         log_debug('seq: %d', seq)
@@ -1224,7 +1224,7 @@ def dist_dup_svc(_ala_name, _svc_logics):
     print('will modify the following ALA')
     for seq in range(start, last+1):
         print('-- %s_%s --' % (_ala_name, dist_generate_suffix(seq)))
-    #raw_input("Press any to continue") # TODO
+    raw_input("Press any to continue") # TODO
 
     # ala-exist: 'TPP_QRY'
     if dist_check_ala_exist(_ala_name, start, last) < 0:
@@ -1275,7 +1275,7 @@ def dist_set_num():
     print('will modify the following ALA')
     for seq in range(start, last+1):
         print('-- %s_%s --' % (obj_name, dist_generate_suffix(seq)))
-    #raw_input("Press any to continue") # TODO
+    raw_input("Press any to continue") # TODO
 
     # ala-exist: 'TPP_QRY'
     if dist_check_ala_exist(obj_name, start, last) < 0:
