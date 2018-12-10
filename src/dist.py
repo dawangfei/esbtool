@@ -156,7 +156,7 @@ def dist_convert_res_id(_table):
 
 
 def dist_generate_suffix(_seq):
-    suffix = '%02d' % (_seq)
+    suffix = '%02d%s' % (_seq, MyCtx.user_defined)
     return suffix
 
 def dist_generate_ala_name(_ala_name, _seq):
@@ -1440,6 +1440,9 @@ def dist_init():
 
     MyCtx.input_db_name = sai_conf_get(job, 'DB_NAME')
     log_debug('db-name: %s', MyCtx.input_db_name)
+
+    MyCtx.user_defined  = sai_conf_get(job, 'SUFFIX')
+    log_debug('user-suffix: [%s]', MyCtx.user_defined)
 
     # DB connection
     MyCtx.connX  = db_init(MyCtx.input_db_name)

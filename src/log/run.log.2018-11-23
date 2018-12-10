@@ -1,0 +1,1356 @@
+2018-11-22 17:04:26 - sailog.py:74 - 
+/_/_/_/_/_/_/_/_/_/_/_/_/_/_/_/_/_/_/_/_/_/_/_/_/_/_/_/_/_/_/_/_/_/_/_/_/_/_/_/_/_/
+2018-11-22 17:04:26 - dist.py:1317 - db-name: PCIP
+2018-11-22 17:04:26 - dist.py:1360 - to set_proc
+2018-11-22 17:04:26 - dist.py:1253 - dist_set_proc: --- RES and LOG ---
+2018-11-22 17:04:26 - dist.py:1257 - proc-action-file: my_proc.txt
+2018-11-22 17:04:26 - dist.py:1030 - --------------------------------------------------------------------------------
+2018-11-22 17:04:26 - dist.py:987 - action: MOD - IPAY_QRY_004_04 - BEFORE_PROC - svc_pre_proc
+2018-11-22 17:04:26 - dist.py:991 - MOD: [IPAY_QRY_004_04] => [DCSDBReConnect("PCIPDB00", "PCIPDB17")|]
+2018-11-22 17:04:26 - dist.py:999 - proc: svc_pre_proc => 03016
+2018-11-22 17:04:26 - dist.py:1006 - proc-id already exist, delete and insert: 03016
+2018-11-22 17:04:26 - dist.py:1008 - 
+2018-11-23 10:56:18 - sailog.py:74 - 
+/_/_/_/_/_/_/_/_/_/_/_/_/_/_/_/_/_/_/_/_/_/_/_/_/_/_/_/_/_/_/_/_/_/_/_/_/_/_/_/_/_/
+2018-11-23 10:56:19 - dist.py:1336 - db-name: PCIP
+2018-11-23 10:56:19 - dist.py:1379 - to set_proc
+2018-11-23 10:56:19 - dist.py:1272 - dist_set_proc: --- RES and LOG ---
+2018-11-23 10:56:19 - dist.py:1276 - proc-action-file: my_proc.txt
+2018-11-23 10:56:19 - dist.py:1049 - --------------------------------------------------------------------------------
+2018-11-23 10:56:19 - dist.py:999 - action: MOD - IPAY_QRY_004_04 - BEFORE_PROC - svc_pre_proc
+2018-11-23 10:56:19 - dist.py:1003 - MOD: [IPAY_QRY_004_04] => [DCSDBReConnect("PCIPDB00", "PCIPDB17")|]
+2018-11-23 10:56:19 - dist.py:1011 - proc: svc_pre_proc => 03016
+2018-11-23 10:56:19 - dist.py:1022 - proc-id already exist, delete and insert: 03016
+2018-11-23 10:56:26 - sailog.py:74 - 
+/_/_/_/_/_/_/_/_/_/_/_/_/_/_/_/_/_/_/_/_/_/_/_/_/_/_/_/_/_/_/_/_/_/_/_/_/_/_/_/_/_/
+2018-11-23 10:56:26 - dist.py:1336 - db-name: PCIP
+2018-11-23 10:56:26 - dist.py:1379 - to set_proc
+2018-11-23 10:56:26 - dist.py:1272 - dist_set_proc: --- RES and LOG ---
+2018-11-23 10:56:26 - dist.py:1276 - proc-action-file: my_proc.txt
+2018-11-23 10:56:26 - dist.py:1049 - --------------------------------------------------------------------------------
+2018-11-23 10:56:26 - dist.py:999 - action: MOD - IPAY_QRY_004_04 - BEFORE_PROC - svc_pre_proc
+2018-11-23 10:56:26 - dist.py:1003 - MOD: [IPAY_QRY_004_04] => [DCSDBReConnect("PCIPDB00", "PCIPDB17")|]
+2018-11-23 10:56:26 - dist.py:1011 - proc: svc_pre_proc => 03016
+2018-11-23 10:56:26 - dist.py:1022 - proc-id already exist, delete and insert: 03016
+2018-11-23 10:56:26 - dist.py:970 - old-exprs:   DCSDBReConnect("PCIPDB00", "PCIPDB17")|
+2018-11-23 10:56:26 - dist.py:1027 - 
+2018-11-23 11:20:02 - sailog.py:74 - 
+/_/_/_/_/_/_/_/_/_/_/_/_/_/_/_/_/_/_/_/_/_/_/_/_/_/_/_/_/_/_/_/_/_/_/_/_/_/_/_/_/_/
+2018-11-23 11:20:02 - dist.py:1361 - db-name: PCIP
+2018-11-23 11:20:02 - dist.py:1404 - to set_proc
+2018-11-23 11:20:02 - dist.py:1297 - dist_set_proc: --- RES and LOG ---
+2018-11-23 11:20:02 - dist.py:1301 - proc-action-file: my_proc.txt
+2018-11-23 11:20:02 - dist.py:1074 - --------------------------------------------------------------------------------
+2018-11-23 11:20:02 - dist.py:1024 - action: MOD - IPAY_QRY_004_04 - BEFORE_PROC - svc_pre_proc
+2018-11-23 11:20:02 - dist.py:1028 - MOD: [IPAY_QRY_004_04] => [DCSDBReConnect("PCIPDB00", "PCIPDB17")|]
+2018-11-23 11:20:02 - dist.py:1036 - proc: svc_pre_proc => 03016
+2018-11-23 11:20:02 - dist.py:1047 - proc-id already exist, delete and insert: 03016
+2018-11-23 11:20:02 - dist.py:972 - old-exprs:   DCSDBReConnect("PCIPDB00", "PCIPDB17")|
+2018-11-23 11:20:02 - dist.py:973 - old-exprs:   03016
+2018-11-23 11:20:02 - dist.py:979 - old-delete: delete from est_event_expr where event_expr_id = '03016'
+2018-11-23 11:20:02 - dist.py:989 - event: [0] => [DCSDBReConnect("PCIPDB00", "PCIPDB17")]
+2018-11-23 11:20:02 - dist.py:995 - 
+insert into est_event_expr (event_expr_id, event_expr_type, serial_no, event_expr_proc, event_expr_desc, comp_id) values ('03016', '0', '0', 'DCSDBReConnect("PCIPDB00", "PCIPDB17")', '', '')
+2018-11-23 11:20:02 - dist.py:989 - event: [1] => []
+2018-11-23 11:20:02 - dist.py:995 - 
+insert into est_event_expr (event_expr_id, event_expr_type, serial_no, event_expr_proc, event_expr_desc, comp_id) values ('03016', '0', '1', '', '', '')
+2018-11-23 11:20:02 - dist.py:1052 - 
+2018-11-23 13:57:16 - sailog.py:74 - 
+/_/_/_/_/_/_/_/_/_/_/_/_/_/_/_/_/_/_/_/_/_/_/_/_/_/_/_/_/_/_/_/_/_/_/_/_/_/_/_/_/_/
+2018-11-23 13:57:16 - dist.py:1363 - db-name: PCIP
+2018-11-23 13:57:16 - dist.py:1406 - to set_proc
+2018-11-23 13:57:16 - dist.py:1299 - dist_set_proc: --- RES and LOG ---
+2018-11-23 13:57:16 - dist.py:1303 - proc-action-file: my_proc.txt
+2018-11-23 13:57:16 - dist.py:1076 - --------------------------------------------------------------------------------
+2018-11-23 13:57:16 - dist.py:1026 - action: MOD - IPAY_QRY_004_04 - BEFORE_PROC - svc_pre_proc
+2018-11-23 13:57:16 - dist.py:1030 - MOD: [IPAY_QRY_004_04] => [DCSDBReConnect("PCIPDB00", "PCIPDB17")|]
+2018-11-23 13:57:16 - dist.py:1038 - proc: svc_pre_proc => 03016
+2018-11-23 13:57:16 - dist.py:1049 - proc-id already exist, delete and insert: 03016
+2018-11-23 13:57:16 - dist.py:972 - old-exprs:   DCSDBReConnect("PCIPDB00", "PCIPDB17")|
+2018-11-23 13:57:16 - dist.py:973 - old-exprs:   03016
+2018-11-23 13:57:16 - dist.py:979 - old-delete: delete from est_event_expr where event_expr_id = '03016'
+2018-11-23 13:57:16 - dist.py:991 - event: [0] => [DCSDBReConnect("PCIPDB00", "PCIPDB17")]
+2018-11-23 13:57:16 - dist.py:997 - 
+insert into est_event_expr (event_expr_id, event_expr_type, serial_no, event_expr_proc, event_expr_desc, comp_id) values ('03016', '0', '1', 'DCSDBReConnect("PCIPDB00", "PCIPDB17")', '', '')
+2018-11-23 13:57:16 - dist.py:991 - event: [1] => []
+2018-11-23 13:57:16 - dist.py:997 - 
+insert into est_event_expr (event_expr_id, event_expr_type, serial_no, event_expr_proc, event_expr_desc, comp_id) values ('03016', '0', '2', '', '', '')
+2018-11-23 13:57:16 - dist.py:1054 - 
+2018-11-23 14:02:51 - sailog.py:74 - 
+/_/_/_/_/_/_/_/_/_/_/_/_/_/_/_/_/_/_/_/_/_/_/_/_/_/_/_/_/_/_/_/_/_/_/_/_/_/_/_/_/_/
+2018-11-23 14:02:51 - dist.py:1365 - db-name: PCIP
+2018-11-23 14:02:51 - dist.py:1408 - to set_proc
+2018-11-23 14:02:51 - dist.py:1301 - dist_set_proc: --- RES and LOG ---
+2018-11-23 14:02:51 - dist.py:1305 - proc-action-file: my_proc.txt
+2018-11-23 14:02:51 - dist.py:1078 - --------------------------------------------------------------------------------
+2018-11-23 14:02:51 - dist.py:1028 - action: MOD - IPAY_QRY_004_04 - BEFORE_PROC - svc_pre_proc
+2018-11-23 14:02:51 - dist.py:1032 - MOD: [IPAY_QRY_004_04] => [DCSDBReConnect("PCIPDB00", "PCIPDB17")|]
+2018-11-23 14:02:51 - dist.py:1040 - proc: svc_pre_proc => 03016
+2018-11-23 14:02:51 - dist.py:1051 - proc-id already exist, delete and insert: 03016
+2018-11-23 14:02:51 - dist.py:972 - old-exprs:   DCSDBReConnect("PCIPDB00", "PCIPDB17")|
+2018-11-23 14:02:51 - dist.py:973 - old-exprs:   03016
+2018-11-23 14:02:51 - dist.py:979 - old-delete: delete from est_event_expr where event_expr_id = '03016'
+2018-11-23 14:02:51 - dist.py:993 - event: [0] => [DCSDBReConnect("PCIPDB00", "PCIPDB17")]
+2018-11-23 14:02:51 - dist.py:999 - 
+insert into est_event_expr (event_expr_id, event_expr_type, serial_no, event_expr_proc, event_expr_desc, comp_id) values ('03016', '0', '1', 'DCSDBReConnect("PCIPDB00", "PCIPDB17")', '', '')
+2018-11-23 14:02:51 - dist.py:1056 - 
+2018-11-23 14:03:37 - sailog.py:74 - 
+/_/_/_/_/_/_/_/_/_/_/_/_/_/_/_/_/_/_/_/_/_/_/_/_/_/_/_/_/_/_/_/_/_/_/_/_/_/_/_/_/_/
+2018-11-23 14:03:37 - dist.py:1365 - db-name: PCIP
+2018-11-23 14:03:37 - dist.py:1408 - to set_proc
+2018-11-23 14:03:37 - dist.py:1301 - dist_set_proc: --- RES and LOG ---
+2018-11-23 14:03:37 - dist.py:1305 - proc-action-file: my_proc.txt
+2018-11-23 14:03:37 - dist.py:1078 - --------------------------------------------------------------------------------
+2018-11-23 14:03:37 - dist.py:1028 - action: MOD - IPAY_QRY_004_04 - BEFORE_PROC - svc_pre_proc
+2018-11-23 14:03:37 - dist.py:1032 - MOD: [IPAY_QRY_004_04] => [DCSDBReConnect("PCIPDB00", "PCIPDB17")|abc|]
+2018-11-23 14:03:37 - dist.py:1040 - proc: svc_pre_proc => 03016
+2018-11-23 14:03:37 - dist.py:1051 - proc-id already exist, delete and insert: 03016
+2018-11-23 14:03:37 - dist.py:972 - old-exprs:   DCSDBReConnect("PCIPDB00", "PCIPDB17")|abc|
+2018-11-23 14:03:37 - dist.py:973 - old-exprs:   03016
+2018-11-23 14:03:37 - dist.py:979 - old-delete: delete from est_event_expr where event_expr_id = '03016'
+2018-11-23 14:03:37 - dist.py:993 - event: [0] => [DCSDBReConnect("PCIPDB00", "PCIPDB17")]
+2018-11-23 14:03:37 - dist.py:999 - 
+insert into est_event_expr (event_expr_id, event_expr_type, serial_no, event_expr_proc, event_expr_desc, comp_id) values ('03016', '0', '1', 'DCSDBReConnect("PCIPDB00", "PCIPDB17")', '', '')
+2018-11-23 14:03:37 - dist.py:993 - event: [1] => [abc]
+2018-11-23 14:03:37 - dist.py:999 - 
+insert into est_event_expr (event_expr_id, event_expr_type, serial_no, event_expr_proc, event_expr_desc, comp_id) values ('03016', '0', '2', 'abc', '', '')
+2018-11-23 14:03:37 - dist.py:1056 - 
+2018-11-23 14:04:03 - sailog.py:74 - 
+/_/_/_/_/_/_/_/_/_/_/_/_/_/_/_/_/_/_/_/_/_/_/_/_/_/_/_/_/_/_/_/_/_/_/_/_/_/_/_/_/_/
+2018-11-23 14:04:03 - dist.py:1365 - db-name: PCIP
+2018-11-23 14:04:03 - dist.py:1408 - to set_proc
+2018-11-23 14:04:03 - dist.py:1301 - dist_set_proc: --- RES and LOG ---
+2018-11-23 14:04:03 - dist.py:1305 - proc-action-file: my_proc.txt
+2018-11-23 14:04:03 - dist.py:1078 - --------------------------------------------------------------------------------
+2018-11-23 14:04:03 - dist.py:1028 - action: MOD - IPAY_QRY_004_04 - BEFORE_PROC - svc_pre_proc
+2018-11-23 14:04:03 - dist.py:1032 - MOD: [IPAY_QRY_004_04] => [DCSDBReConnect("PCIPDB00", "PCIPDB17")|abc]
+2018-11-23 14:04:03 - dist.py:1040 - proc: svc_pre_proc => 03016
+2018-11-23 14:04:03 - dist.py:1051 - proc-id already exist, delete and insert: 03016
+2018-11-23 14:04:03 - dist.py:972 - old-exprs:   DCSDBReConnect("PCIPDB00", "PCIPDB17")|abc
+2018-11-23 14:04:03 - dist.py:973 - old-exprs:   03016
+2018-11-23 14:04:03 - dist.py:979 - old-delete: delete from est_event_expr where event_expr_id = '03016'
+2018-11-23 14:04:03 - dist.py:993 - event: [0] => [DCSDBReConnect("PCIPDB00", "PCIPDB17")]
+2018-11-23 14:04:03 - dist.py:999 - 
+insert into est_event_expr (event_expr_id, event_expr_type, serial_no, event_expr_proc, event_expr_desc, comp_id) values ('03016', '0', '1', 'DCSDBReConnect("PCIPDB00", "PCIPDB17")', '', '')
+2018-11-23 14:04:03 - dist.py:993 - event: [1] => [abc]
+2018-11-23 14:04:03 - dist.py:999 - 
+insert into est_event_expr (event_expr_id, event_expr_type, serial_no, event_expr_proc, event_expr_desc, comp_id) values ('03016', '0', '2', 'abc', '', '')
+2018-11-23 14:04:03 - dist.py:1056 - 
+2018-11-23 14:06:22 - sailog.py:74 - 
+/_/_/_/_/_/_/_/_/_/_/_/_/_/_/_/_/_/_/_/_/_/_/_/_/_/_/_/_/_/_/_/_/_/_/_/_/_/_/_/_/_/
+2018-11-23 14:06:22 - dist.py:1365 - db-name: PCIP
+2018-11-23 14:06:22 - dist.py:1408 - to set_proc
+2018-11-23 14:06:22 - dist.py:1301 - dist_set_proc: --- RES and LOG ---
+2018-11-23 14:06:22 - dist.py:1305 - proc-action-file: my_proc.txt
+2018-11-23 14:06:22 - dist.py:1078 - --------------------------------------------------------------------------------
+2018-11-23 14:06:22 - dist.py:1028 - action: MOD - IPAY_QRY_004_04 - BEFORE_PROC - svc_pre_proc
+2018-11-23 14:06:22 - dist.py:1032 - MOD: [IPAY_QRY_004_04] => [DCSDBReConnect("PCIPDB00", "PCIPDB17")|abc]
+2018-11-23 14:06:22 - dist.py:1040 - proc: svc_pre_proc => 03016
+2018-11-23 14:06:22 - dist.py:1051 - proc-id already exist, delete and insert: 03016
+2018-11-23 14:06:22 - dist.py:972 - old-exprs:   DCSDBReConnect("PCIPDB00", "PCIPDB17")|abc
+2018-11-23 14:06:22 - dist.py:973 - old-exprs:   03016
+2018-11-23 14:06:22 - dist.py:979 - old-delete: delete from est_event_expr where event_expr_id = '03016'
+2018-11-23 14:06:22 - dist.py:993 - event: [0] => [DCSDBReConnect("PCIPDB00", "PCIPDB17")]
+2018-11-23 14:06:22 - dist.py:999 - 
+insert into est_event_expr (event_expr_id, event_expr_type, serial_no, event_expr_proc, event_expr_desc, comp_id) values ('03016', '0', '1', 'DCSDBReConnect("PCIPDB00", "PCIPDB17")', '', '')
+2018-11-23 14:06:22 - dist.py:993 - event: [1] => [abc]
+2018-11-23 14:06:22 - dist.py:999 - 
+insert into est_event_expr (event_expr_id, event_expr_type, serial_no, event_expr_proc, event_expr_desc, comp_id) values ('03016', '0', '2', 'abc', '', '')
+2018-11-23 14:06:22 - dist.py:1056 - 
+2018-11-23 14:06:22 - dist.py:1078 - --------------------------------------------------------------------------------
+2018-11-23 14:06:22 - dist.py:1028 - action: MOD - IPAY_QRY_004_04 - SUCC_PROC - svc_succ_proc
+2018-11-23 14:06:22 - dist.py:1032 - MOD: [IPAY_QRY_004_04] => [GOOD()|]
+2018-11-23 14:06:22 - dist.py:1040 - proc: svc_succ_proc => 03017
+2018-11-23 14:06:22 - dist.py:1051 - proc-id already exist, delete and insert: 03017
+2018-11-23 14:06:22 - dist.py:972 - old-exprs:   GOOD()|
+2018-11-23 14:06:22 - dist.py:973 - old-exprs:   03017
+2018-11-23 14:06:22 - dist.py:979 - old-delete: delete from est_event_expr where event_expr_id = '03017'
+2018-11-23 14:06:22 - dist.py:993 - event: [0] => [GOOD()]
+2018-11-23 14:06:22 - dist.py:999 - 
+insert into est_event_expr (event_expr_id, event_expr_type, serial_no, event_expr_proc, event_expr_desc, comp_id) values ('03017', '0', '1', 'GOOD()', '', '')
+2018-11-23 14:06:22 - dist.py:1056 - 
+2018-11-23 14:07:50 - sailog.py:74 - 
+/_/_/_/_/_/_/_/_/_/_/_/_/_/_/_/_/_/_/_/_/_/_/_/_/_/_/_/_/_/_/_/_/_/_/_/_/_/_/_/_/_/
+2018-11-23 14:07:50 - dist.py:1365 - db-name: PCIP
+2018-11-23 14:07:50 - dist.py:1408 - to set_proc
+2018-11-23 14:07:50 - dist.py:1301 - dist_set_proc: --- RES and LOG ---
+2018-11-23 14:07:50 - dist.py:1305 - proc-action-file: my_proc.txt
+2018-11-23 14:07:50 - dist.py:1078 - --------------------------------------------------------------------------------
+2018-11-23 14:07:50 - dist.py:1028 - action: MOD - IPAY_QRY_004_04 - BEFORE_PROC - svc_pre_proc
+2018-11-23 14:07:50 - dist.py:1032 - MOD: [IPAY_QRY_004_04] => [DCSDBReConnect("PCIPDB00", "PCIPDB17")|abc]
+2018-11-23 14:07:50 - dist.py:1040 - proc: svc_pre_proc => 03016
+2018-11-23 14:07:50 - dist.py:1051 - proc-id already exist, delete and insert: 03016
+2018-11-23 14:07:50 - dist.py:972 - old-exprs:   DCSDBReConnect("PCIPDB00", "PCIPDB17")|abc
+2018-11-23 14:07:50 - dist.py:973 - old-exprs:   03016
+2018-11-23 14:07:50 - dist.py:979 - old-delete: delete from est_event_expr where event_expr_id = '03016'
+2018-11-23 14:07:50 - dist.py:993 - event: [0] => [DCSDBReConnect("PCIPDB00", "PCIPDB17")]
+2018-11-23 14:07:50 - dist.py:999 - 
+insert into est_event_expr (event_expr_id, event_expr_type, serial_no, event_expr_proc, event_expr_desc, comp_id) values ('03016', '0', '1', 'DCSDBReConnect("PCIPDB00", "PCIPDB17")', '', '')
+2018-11-23 14:07:50 - dist.py:993 - event: [1] => [abc]
+2018-11-23 14:07:50 - dist.py:999 - 
+insert into est_event_expr (event_expr_id, event_expr_type, serial_no, event_expr_proc, event_expr_desc, comp_id) values ('03016', '0', '2', 'abc', '', '')
+2018-11-23 14:07:50 - dist.py:1056 - 
+2018-11-23 14:07:50 - dist.py:1078 - --------------------------------------------------------------------------------
+2018-11-23 14:07:50 - dist.py:1028 - action: MOD - IPAY_QRY_004_04 - SUCC_PROC - svc_succ_proc
+2018-11-23 14:07:50 - dist.py:1032 - MOD: [IPAY_QRY_004_04] => [GOOD()|]
+2018-11-23 14:07:50 - dist.py:1040 - proc: svc_succ_proc => 03017
+2018-11-23 14:07:50 - dist.py:1051 - proc-id already exist, delete and insert: 03017
+2018-11-23 14:07:50 - dist.py:972 - old-exprs:   GOOD()|
+2018-11-23 14:07:50 - dist.py:973 - old-exprs:   03017
+2018-11-23 14:07:50 - dist.py:979 - old-delete: delete from est_event_expr where event_expr_id = '03017'
+2018-11-23 14:07:50 - dist.py:993 - event: [0] => [GOOD()]
+2018-11-23 14:07:50 - dist.py:999 - 
+insert into est_event_expr (event_expr_id, event_expr_type, serial_no, event_expr_proc, event_expr_desc, comp_id) values ('03017', '0', '1', 'GOOD()', '', '')
+2018-11-23 14:07:50 - dist.py:1056 - 
+2018-11-23 14:07:50 - dist.py:1078 - --------------------------------------------------------------------------------
+2018-11-23 14:07:50 - dist.py:1028 - action: MOD - IPAY_QRY_004_04 - FAIL_PROC - svc_lost_proc
+2018-11-23 14:07:50 - dist.py:1032 - MOD: [IPAY_QRY_004_04] => [FIRED()|]
+2018-11-23 14:07:50 - dist.py:1040 - proc: svc_lost_proc => 
+2018-11-23 14:07:50 - dist.py:1044 - proc-id not exist, create it
+2018-11-23 14:08:01 - sailog.py:74 - 
+/_/_/_/_/_/_/_/_/_/_/_/_/_/_/_/_/_/_/_/_/_/_/_/_/_/_/_/_/_/_/_/_/_/_/_/_/_/_/_/_/_/
+2018-11-23 14:08:01 - dist.py:1365 - db-name: PCIP
+2018-11-23 14:08:01 - dist.py:1408 - to set_proc
+2018-11-23 14:08:01 - dist.py:1301 - dist_set_proc: --- RES and LOG ---
+2018-11-23 14:08:01 - dist.py:1305 - proc-action-file: my_proc.txt
+2018-11-23 14:08:01 - dist.py:1078 - --------------------------------------------------------------------------------
+2018-11-23 14:08:01 - dist.py:1028 - action: MOD - IPAY_QRY_004_04 - BEFORE_PROC - svc_pre_proc
+2018-11-23 14:08:01 - dist.py:1032 - MOD: [IPAY_QRY_004_04] => [DCSDBReConnect("PCIPDB00", "PCIPDB17")|abc]
+2018-11-23 14:08:01 - dist.py:1040 - proc: svc_pre_proc => 03016
+2018-11-23 14:08:01 - dist.py:1051 - proc-id already exist, delete and insert: 03016
+2018-11-23 14:08:01 - dist.py:972 - old-exprs:   DCSDBReConnect("PCIPDB00", "PCIPDB17")|abc
+2018-11-23 14:08:01 - dist.py:973 - old-exprs:   03016
+2018-11-23 14:08:01 - dist.py:979 - old-delete: delete from est_event_expr where event_expr_id = '03016'
+2018-11-23 14:08:01 - dist.py:993 - event: [0] => [DCSDBReConnect("PCIPDB00", "PCIPDB17")]
+2018-11-23 14:08:01 - dist.py:999 - 
+insert into est_event_expr (event_expr_id, event_expr_type, serial_no, event_expr_proc, event_expr_desc, comp_id) values ('03016', '0', '1', 'DCSDBReConnect("PCIPDB00", "PCIPDB17")', '', '')
+2018-11-23 14:08:01 - dist.py:993 - event: [1] => [abc]
+2018-11-23 14:08:01 - dist.py:999 - 
+insert into est_event_expr (event_expr_id, event_expr_type, serial_no, event_expr_proc, event_expr_desc, comp_id) values ('03016', '0', '2', 'abc', '', '')
+2018-11-23 14:08:01 - dist.py:1056 - 
+2018-11-23 14:08:01 - dist.py:1078 - --------------------------------------------------------------------------------
+2018-11-23 14:08:01 - dist.py:1028 - action: MOD - IPAY_QRY_004_04 - SUCC_PROC - svc_succ_proc
+2018-11-23 14:08:01 - dist.py:1032 - MOD: [IPAY_QRY_004_04] => [GOOD()|]
+2018-11-23 14:08:01 - dist.py:1040 - proc: svc_succ_proc => 03017
+2018-11-23 14:08:01 - dist.py:1051 - proc-id already exist, delete and insert: 03017
+2018-11-23 14:08:01 - dist.py:972 - old-exprs:   GOOD()|
+2018-11-23 14:08:01 - dist.py:973 - old-exprs:   03017
+2018-11-23 14:08:01 - dist.py:979 - old-delete: delete from est_event_expr where event_expr_id = '03017'
+2018-11-23 14:08:01 - dist.py:993 - event: [0] => [GOOD()]
+2018-11-23 14:08:01 - dist.py:999 - 
+insert into est_event_expr (event_expr_id, event_expr_type, serial_no, event_expr_proc, event_expr_desc, comp_id) values ('03017', '0', '1', 'GOOD()', '', '')
+2018-11-23 14:08:01 - dist.py:1056 - 
+2018-11-23 14:08:01 - dist.py:1078 - --------------------------------------------------------------------------------
+2018-11-23 14:08:01 - dist.py:1028 - action: MOD - IPAY_QRY_004_04 - FAIL_PROC - svc_lost_proc
+2018-11-23 14:08:01 - dist.py:1032 - MOD: [IPAY_QRY_004_04] => [FIRED()|]
+2018-11-23 14:08:01 - dist.py:1040 - proc: svc_lost_proc => 
+2018-11-23 14:08:01 - dist.py:1044 - proc-id not exist, create it
+2018-11-23 14:08:01 - dist.py:963 - new-exprs:   FIRED()|
+2018-11-23 14:08:01 - dist.py:964 - new-column:  svc_lost_proc
+2018-11-23 14:08:01 - dist.py:1056 - 
+2018-11-23 14:55:22 - sailog.py:74 - 
+/_/_/_/_/_/_/_/_/_/_/_/_/_/_/_/_/_/_/_/_/_/_/_/_/_/_/_/_/_/_/_/_/_/_/_/_/_/_/_/_/_/
+2018-11-23 14:55:22 - dist.py:1407 - db-name: PCIP
+2018-11-23 14:55:22 - dist.py:1450 - to set_proc
+2018-11-23 14:55:22 - dist.py:1343 - dist_set_proc: --- RES and LOG ---
+2018-11-23 14:55:22 - dist.py:1347 - proc-action-file: my_proc.txt
+2018-11-23 14:55:22 - dist.py:1120 - --------------------------------------------------------------------------------
+2018-11-23 14:55:22 - dist.py:1070 - action: MOD - IPAY_QRY_004_04 - BEFORE_PROC - svc_pre_proc
+2018-11-23 14:55:22 - dist.py:1074 - MOD: [IPAY_QRY_004_04] => [DCSDBReConnect("PCIPDB00", "PCIPDB17")|abc]
+2018-11-23 14:55:22 - dist.py:1082 - proc: svc_pre_proc => 03016
+2018-11-23 14:55:22 - dist.py:1093 - proc-id already exist, delete and insert: 03016
+2018-11-23 14:55:22 - dist.py:1026 - old-exprs:   DCSDBReConnect("PCIPDB00", "PCIPDB17")|abc
+2018-11-23 14:55:22 - dist.py:1027 - old-procid:  03016
+2018-11-23 14:55:22 - dist.py:1034 - old-delete: delete from est_event_expr where event_expr_id = '03016'
+2018-11-23 14:55:22 - dist.py:966 - cm-exprs:    DCSDBReConnect("PCIPDB00", "PCIPDB17")|abc
+2018-11-23 14:55:22 - dist.py:967 - cm-procid:   03016
+2018-11-23 14:55:22 - dist.py:983 - event: [0] => [DCSDBReConnect("PCIPDB00", "PCIPDB17")]
+2018-11-23 14:55:22 - dist.py:989 - 
+insert into est_event_expr (event_expr_id, event_expr_type, serial_no, event_expr_proc, event_expr_desc, comp_id) values ('03016', '0', '1', 'DCSDBReConnect("PCIPDB00", "PCIPDB17")', '', '')
+2018-11-23 14:55:22 - dist.py:983 - event: [1] => [abc]
+2018-11-23 14:55:22 - dist.py:989 - 
+insert into est_event_expr (event_expr_id, event_expr_type, serial_no, event_expr_proc, event_expr_desc, comp_id) values ('03016', '0', '2', 'abc', '', '')
+2018-11-23 14:55:22 - dist.py:1041 - old-list: [u"delete from est_event_expr where event_expr_id = '03016'", u'insert into est_event_expr (event_expr_id, event_expr_type, serial_no, event_expr_proc, event_expr_desc, comp_id) values (\'03016\', \'0\', \'1\', \'DCSDBReConnect("PCIPDB00", "PCIPDB17")\', \'\', \'\')', u"insert into est_event_expr (event_expr_id, event_expr_type, serial_no, event_expr_proc, event_expr_desc, comp_id) values ('03016', '0', '2', 'abc', '', '')"]
+2018-11-23 14:55:22 - dist.py:1098 - 
+2018-11-23 14:55:22 - dist.py:1120 - --------------------------------------------------------------------------------
+2018-11-23 14:55:22 - dist.py:1070 - action: MOD - IPAY_QRY_004_04 - SUCC_PROC - svc_succ_proc
+2018-11-23 14:55:22 - dist.py:1074 - MOD: [IPAY_QRY_004_04] => [GOOD()|]
+2018-11-23 14:55:22 - dist.py:1082 - proc: svc_succ_proc => 03017
+2018-11-23 14:55:22 - dist.py:1093 - proc-id already exist, delete and insert: 03017
+2018-11-23 14:55:22 - dist.py:1026 - old-exprs:   GOOD()|
+2018-11-23 14:55:22 - dist.py:1027 - old-procid:  03017
+2018-11-23 14:55:22 - dist.py:1034 - old-delete: delete from est_event_expr where event_expr_id = '03017'
+2018-11-23 14:55:22 - dist.py:966 - cm-exprs:    GOOD()|
+2018-11-23 14:55:22 - dist.py:967 - cm-procid:   03017
+2018-11-23 14:55:22 - dist.py:983 - event: [0] => [GOOD()]
+2018-11-23 14:55:22 - dist.py:989 - 
+insert into est_event_expr (event_expr_id, event_expr_type, serial_no, event_expr_proc, event_expr_desc, comp_id) values ('03017', '0', '1', 'GOOD()', '', '')
+2018-11-23 14:55:22 - dist.py:1041 - old-list: [u"delete from est_event_expr where event_expr_id = '03017'", u"insert into est_event_expr (event_expr_id, event_expr_type, serial_no, event_expr_proc, event_expr_desc, comp_id) values ('03017', '0', '1', 'GOOD()', '', '')"]
+2018-11-23 14:55:22 - dist.py:1098 - 
+2018-11-23 14:55:22 - dist.py:1120 - --------------------------------------------------------------------------------
+2018-11-23 14:55:22 - dist.py:1070 - action: MOD - IPAY_QRY_004_04 - FAIL_PROC - svc_lost_proc
+2018-11-23 14:55:22 - dist.py:1074 - MOD: [IPAY_QRY_004_04] => [FIRED()|]
+2018-11-23 14:55:22 - dist.py:1082 - proc: svc_lost_proc => 
+2018-11-23 14:55:22 - dist.py:1086 - proc-id not exist, create it
+2018-11-23 14:55:22 - dist.py:995 - new-exprs:   FIRED()|
+2018-11-23 14:55:22 - dist.py:996 - new-column:  svc_lost_proc
+2018-11-23 14:55:22 - dist.py:997 - new-svc:     IPAY_QRY_004_04
+2018-11-23 14:55:22 - dist.py:966 - cm-exprs:    FIRED()|
+2018-11-23 14:55:22 - dist.py:967 - cm-procid:   03018
+2018-11-23 14:55:22 - dist.py:983 - event: [0] => [FIRED()]
+2018-11-23 14:55:22 - dist.py:989 - 
+insert into est_event_expr (event_expr_id, event_expr_type, serial_no, event_expr_proc, event_expr_desc, comp_id) values ('03018', '0', '1', 'FIRED()', '', '')
+2018-11-23 14:55:22 - dist.py:1012 - new-list: ["insert into est_event_expr (event_expr_id, event_expr_type, serial_no, event_expr_proc, event_expr_desc, comp_id) values ('03018', '0', '1', 'FIRED()', '', '')"]
+2018-11-23 14:55:22 - dist.py:1018 - new-list: ["insert into est_event_expr (event_expr_id, event_expr_type, serial_no, event_expr_proc, event_expr_desc, comp_id) values ('03018', '0', '1', 'FIRED()', '', '')", "update est_svc_logic set svc_lost_proc = '03018' where svc_name = 'IPAY_QRY_004_04'"]
+2018-11-23 14:55:22 - dist.py:1098 - 
+2018-11-23 14:57:41 - sailog.py:74 - 
+/_/_/_/_/_/_/_/_/_/_/_/_/_/_/_/_/_/_/_/_/_/_/_/_/_/_/_/_/_/_/_/_/_/_/_/_/_/_/_/_/_/
+2018-11-23 14:57:41 - dist.py:1407 - db-name: PCIP
+2018-11-23 14:57:41 - dist.py:1450 - to set_proc
+2018-11-23 14:57:41 - dist.py:1343 - dist_set_proc: --- RES and LOG ---
+2018-11-23 14:57:41 - dist.py:1347 - proc-action-file: my_proc.txt
+2018-11-23 14:57:41 - dist.py:1120 - --------------------------------------------------------------------------------
+2018-11-23 14:57:41 - dist.py:1070 - action: MOD - IPAY_QRY_004_04 - BEFORE_PROC - svc_pre_proc
+2018-11-23 14:57:41 - dist.py:1074 - MOD: [IPAY_QRY_004_04] => [DCSDBReConnect("PCIPDB00", "PCIPDB17")|abc]
+2018-11-23 14:57:41 - dist.py:1082 - proc: svc_pre_proc => 03016
+2018-11-23 14:57:41 - dist.py:1093 - proc-id already exist, delete and insert: 03016
+2018-11-23 14:57:41 - dist.py:1025 - old-exprs:   DCSDBReConnect("PCIPDB00", "PCIPDB17")|abc
+2018-11-23 14:57:41 - dist.py:1026 - old-procid:  03016
+2018-11-23 14:57:41 - dist.py:1033 - old-delete: delete from est_event_expr where event_expr_id = '03016'
+2018-11-23 14:57:41 - dist.py:980 - event: [0] => [DCSDBReConnect("PCIPDB00", "PCIPDB17")]
+2018-11-23 14:57:41 - dist.py:980 - event: [1] => [abc]
+2018-11-23 14:57:41 - dist.py:1041 - delete from est_event_expr where event_expr_id = '03016'
+2018-11-23 14:57:41 - dist.py:1041 - delete from est_event_expr where event_expr_id = '03016'
+2018-11-23 14:57:41 - dist.py:1041 - delete from est_event_expr where event_expr_id = '03016'
+2018-11-23 14:57:41 - dist.py:1098 - 
+2018-11-23 14:57:41 - dist.py:1120 - --------------------------------------------------------------------------------
+2018-11-23 14:57:41 - dist.py:1070 - action: MOD - IPAY_QRY_004_04 - SUCC_PROC - svc_succ_proc
+2018-11-23 14:57:41 - dist.py:1074 - MOD: [IPAY_QRY_004_04] => [GOOD()|]
+2018-11-23 14:57:41 - dist.py:1082 - proc: svc_succ_proc => 03017
+2018-11-23 14:57:41 - dist.py:1093 - proc-id already exist, delete and insert: 03017
+2018-11-23 14:57:41 - dist.py:1025 - old-exprs:   GOOD()|
+2018-11-23 14:57:41 - dist.py:1026 - old-procid:  03017
+2018-11-23 14:57:41 - dist.py:1033 - old-delete: delete from est_event_expr where event_expr_id = '03017'
+2018-11-23 14:57:41 - dist.py:980 - event: [0] => [GOOD()]
+2018-11-23 14:57:41 - dist.py:1041 - delete from est_event_expr where event_expr_id = '03017'
+2018-11-23 14:57:41 - dist.py:1041 - delete from est_event_expr where event_expr_id = '03017'
+2018-11-23 14:57:41 - dist.py:1098 - 
+2018-11-23 14:57:41 - dist.py:1120 - --------------------------------------------------------------------------------
+2018-11-23 14:57:41 - dist.py:1070 - action: MOD - IPAY_QRY_004_04 - FAIL_PROC - svc_lost_proc
+2018-11-23 14:57:41 - dist.py:1074 - MOD: [IPAY_QRY_004_04] => [FIRED()|]
+2018-11-23 14:57:41 - dist.py:1082 - proc: svc_lost_proc => 
+2018-11-23 14:57:41 - dist.py:1086 - proc-id not exist, create it
+2018-11-23 14:57:41 - dist.py:991 - new-exprs:   FIRED()|
+2018-11-23 14:57:41 - dist.py:992 - new-column:  svc_lost_proc
+2018-11-23 14:57:41 - dist.py:993 - new-svc:     IPAY_QRY_004_04
+2018-11-23 14:57:41 - dist.py:980 - event: [0] => [FIRED()]
+2018-11-23 14:57:41 - dist.py:1008 - new-list: ["insert into est_event_expr (event_expr_id, event_expr_type, serial_no, event_expr_proc, event_expr_desc, comp_id) values ('03019', '0', '1', 'FIRED()', '', '')"]
+2018-11-23 14:57:41 - dist.py:1014 - new-list: ["insert into est_event_expr (event_expr_id, event_expr_type, serial_no, event_expr_proc, event_expr_desc, comp_id) values ('03019', '0', '1', 'FIRED()', '', '')", "update est_svc_logic set svc_lost_proc = '03019' where svc_name = 'IPAY_QRY_004_04'"]
+2018-11-23 14:57:41 - dist.py:1017 - update est_svc_logic set svc_lost_proc = '03019' where svc_name = 'IPAY_QRY_004_04'
+2018-11-23 14:57:41 - dist.py:1017 - update est_svc_logic set svc_lost_proc = '03019' where svc_name = 'IPAY_QRY_004_04'
+2018-11-23 14:57:41 - dist.py:1098 - 
+2018-11-23 15:00:16 - sailog.py:74 - 
+/_/_/_/_/_/_/_/_/_/_/_/_/_/_/_/_/_/_/_/_/_/_/_/_/_/_/_/_/_/_/_/_/_/_/_/_/_/_/_/_/_/
+2018-11-23 15:00:16 - dist.py:1408 - db-name: PCIP
+2018-11-23 15:00:16 - dist.py:1451 - to set_proc
+2018-11-23 15:00:16 - dist.py:1344 - dist_set_proc: --- RES and LOG ---
+2018-11-23 15:00:16 - dist.py:1348 - proc-action-file: my_proc.txt
+2018-11-23 15:00:16 - dist.py:1121 - --------------------------------------------------------------------------------
+2018-11-23 15:00:16 - dist.py:1071 - action: MOD - IPAY_QRY_004_04 - BEFORE_PROC - svc_pre_proc
+2018-11-23 15:00:16 - dist.py:1075 - MOD: [IPAY_QRY_004_04] => [DCSDBReConnect("PCIPDB00", "PCIPDB17")|abc]
+2018-11-23 15:00:16 - dist.py:1083 - proc: svc_pre_proc => 03016
+2018-11-23 15:00:16 - dist.py:1094 - proc-id already exist, delete and insert: 03016
+2018-11-23 15:00:16 - dist.py:1025 - old-exprs:   DCSDBReConnect("PCIPDB00", "PCIPDB17")|abc
+2018-11-23 15:00:16 - dist.py:1026 - old-procid:  03016
+2018-11-23 15:00:16 - dist.py:1033 - old-delete: delete from est_event_expr where event_expr_id = '03016'
+2018-11-23 15:00:16 - dist.py:980 - event: [0] => [DCSDBReConnect("PCIPDB00", "PCIPDB17")]
+2018-11-23 15:00:16 - dist.py:980 - event: [1] => [abc]
+2018-11-23 15:00:16 - dist.py:1038 - [u'insert into est_event_expr (event_expr_id, event_expr_type, serial_no, event_expr_proc, event_expr_desc, comp_id) values (\'03016\', \'0\', \'1\', \'DCSDBReConnect("PCIPDB00", "PCIPDB17")\', \'\', \'\')', u"insert into est_event_expr (event_expr_id, event_expr_type, serial_no, event_expr_proc, event_expr_desc, comp_id) values ('03016', '0', '2', 'abc', '', '')"]
+2018-11-23 15:00:16 - dist.py:1042 - delete from est_event_expr where event_expr_id = '03016'
+2018-11-23 15:00:16 - dist.py:1042 - delete from est_event_expr where event_expr_id = '03016'
+2018-11-23 15:00:16 - dist.py:1042 - delete from est_event_expr where event_expr_id = '03016'
+2018-11-23 15:00:16 - dist.py:1099 - 
+2018-11-23 15:00:16 - dist.py:1121 - --------------------------------------------------------------------------------
+2018-11-23 15:00:16 - dist.py:1071 - action: MOD - IPAY_QRY_004_04 - SUCC_PROC - svc_succ_proc
+2018-11-23 15:00:16 - dist.py:1075 - MOD: [IPAY_QRY_004_04] => [GOOD()|]
+2018-11-23 15:00:16 - dist.py:1083 - proc: svc_succ_proc => 03017
+2018-11-23 15:00:16 - dist.py:1094 - proc-id already exist, delete and insert: 03017
+2018-11-23 15:00:16 - dist.py:1025 - old-exprs:   GOOD()|
+2018-11-23 15:00:16 - dist.py:1026 - old-procid:  03017
+2018-11-23 15:00:16 - dist.py:1033 - old-delete: delete from est_event_expr where event_expr_id = '03017'
+2018-11-23 15:00:16 - dist.py:980 - event: [0] => [GOOD()]
+2018-11-23 15:00:16 - dist.py:1038 - [u"insert into est_event_expr (event_expr_id, event_expr_type, serial_no, event_expr_proc, event_expr_desc, comp_id) values ('03017', '0', '1', 'GOOD()', '', '')"]
+2018-11-23 15:00:16 - dist.py:1042 - delete from est_event_expr where event_expr_id = '03017'
+2018-11-23 15:00:16 - dist.py:1042 - delete from est_event_expr where event_expr_id = '03017'
+2018-11-23 15:00:16 - dist.py:1099 - 
+2018-11-23 15:00:16 - dist.py:1121 - --------------------------------------------------------------------------------
+2018-11-23 15:00:16 - dist.py:1071 - action: MOD - IPAY_QRY_004_04 - FAIL_PROC - svc_lost_proc
+2018-11-23 15:00:16 - dist.py:1075 - MOD: [IPAY_QRY_004_04] => [FIRED()|]
+2018-11-23 15:00:16 - dist.py:1083 - proc: svc_lost_proc => 
+2018-11-23 15:00:16 - dist.py:1087 - proc-id not exist, create it
+2018-11-23 15:00:16 - dist.py:991 - new-exprs:   FIRED()|
+2018-11-23 15:00:16 - dist.py:992 - new-column:  svc_lost_proc
+2018-11-23 15:00:16 - dist.py:993 - new-svc:     IPAY_QRY_004_04
+2018-11-23 15:00:16 - dist.py:980 - event: [0] => [FIRED()]
+2018-11-23 15:00:16 - dist.py:1008 - new-list: ["insert into est_event_expr (event_expr_id, event_expr_type, serial_no, event_expr_proc, event_expr_desc, comp_id) values ('03020', '0', '1', 'FIRED()', '', '')"]
+2018-11-23 15:00:16 - dist.py:1014 - new-list: ["insert into est_event_expr (event_expr_id, event_expr_type, serial_no, event_expr_proc, event_expr_desc, comp_id) values ('03020', '0', '1', 'FIRED()', '', '')", "update est_svc_logic set svc_lost_proc = '03020' where svc_name = 'IPAY_QRY_004_04'"]
+2018-11-23 15:00:16 - dist.py:1017 - update est_svc_logic set svc_lost_proc = '03020' where svc_name = 'IPAY_QRY_004_04'
+2018-11-23 15:00:16 - dist.py:1017 - update est_svc_logic set svc_lost_proc = '03020' where svc_name = 'IPAY_QRY_004_04'
+2018-11-23 15:00:16 - dist.py:1099 - 
+2018-11-23 15:02:36 - sailog.py:74 - 
+/_/_/_/_/_/_/_/_/_/_/_/_/_/_/_/_/_/_/_/_/_/_/_/_/_/_/_/_/_/_/_/_/_/_/_/_/_/_/_/_/_/
+2018-11-23 15:02:36 - dist.py:1407 - db-name: PCIP
+2018-11-23 15:02:36 - dist.py:1450 - to set_proc
+2018-11-23 15:02:36 - dist.py:1343 - dist_set_proc: --- RES and LOG ---
+2018-11-23 15:02:36 - dist.py:1347 - proc-action-file: my_proc.txt
+2018-11-23 15:02:36 - dist.py:1120 - --------------------------------------------------------------------------------
+2018-11-23 15:02:36 - dist.py:1070 - action: MOD - IPAY_QRY_004_04 - BEFORE_PROC - svc_pre_proc
+2018-11-23 15:02:36 - dist.py:1074 - MOD: [IPAY_QRY_004_04] => [DCSDBReConnect("PCIPDB00", "PCIPDB17")|abc]
+2018-11-23 15:02:36 - dist.py:1082 - proc: svc_pre_proc => 03016
+2018-11-23 15:02:36 - dist.py:1093 - proc-id already exist, delete and insert: 03016
+2018-11-23 15:02:36 - dist.py:1025 - old-exprs:   DCSDBReConnect("PCIPDB00", "PCIPDB17")|abc
+2018-11-23 15:02:36 - dist.py:1026 - old-procid:  03016
+2018-11-23 15:02:36 - dist.py:1033 - old-delete: delete from est_event_expr where event_expr_id = '03016'
+2018-11-23 15:02:36 - dist.py:980 - event: [0] => [DCSDBReConnect("PCIPDB00", "PCIPDB17")]
+2018-11-23 15:02:36 - dist.py:980 - event: [1] => [abc]
+2018-11-23 15:02:36 - dist.py:1041 - delete from est_event_expr where event_expr_id = '03016'
+2018-11-23 15:02:36 - dist.py:1041 - insert into est_event_expr (event_expr_id, event_expr_type, serial_no, event_expr_proc, event_expr_desc, comp_id) values ('03016', '0', '1', 'DCSDBReConnect("PCIPDB00", "PCIPDB17")', '', '')
+2018-11-23 15:02:36 - dist.py:1041 - insert into est_event_expr (event_expr_id, event_expr_type, serial_no, event_expr_proc, event_expr_desc, comp_id) values ('03016', '0', '2', 'abc', '', '')
+2018-11-23 15:02:36 - dist.py:1098 - 
+2018-11-23 15:02:36 - dist.py:1120 - --------------------------------------------------------------------------------
+2018-11-23 15:02:36 - dist.py:1070 - action: MOD - IPAY_QRY_004_04 - SUCC_PROC - svc_succ_proc
+2018-11-23 15:02:36 - dist.py:1074 - MOD: [IPAY_QRY_004_04] => [GOOD()|]
+2018-11-23 15:02:36 - dist.py:1082 - proc: svc_succ_proc => 03017
+2018-11-23 15:02:36 - dist.py:1093 - proc-id already exist, delete and insert: 03017
+2018-11-23 15:02:36 - dist.py:1025 - old-exprs:   GOOD()|
+2018-11-23 15:02:36 - dist.py:1026 - old-procid:  03017
+2018-11-23 15:02:36 - dist.py:1033 - old-delete: delete from est_event_expr where event_expr_id = '03017'
+2018-11-23 15:02:36 - dist.py:980 - event: [0] => [GOOD()]
+2018-11-23 15:02:36 - dist.py:1041 - delete from est_event_expr where event_expr_id = '03017'
+2018-11-23 15:02:36 - dist.py:1041 - insert into est_event_expr (event_expr_id, event_expr_type, serial_no, event_expr_proc, event_expr_desc, comp_id) values ('03017', '0', '1', 'GOOD()', '', '')
+2018-11-23 15:02:36 - dist.py:1098 - 
+2018-11-23 15:02:36 - dist.py:1120 - --------------------------------------------------------------------------------
+2018-11-23 15:02:36 - dist.py:1070 - action: MOD - IPAY_QRY_004_04 - FAIL_PROC - svc_lost_proc
+2018-11-23 15:02:36 - dist.py:1074 - MOD: [IPAY_QRY_004_04] => [FIRED()|]
+2018-11-23 15:02:36 - dist.py:1082 - proc: svc_lost_proc => 
+2018-11-23 15:02:36 - dist.py:1086 - proc-id not exist, create it
+2018-11-23 15:02:36 - dist.py:991 - new-exprs:   FIRED()|
+2018-11-23 15:02:36 - dist.py:992 - new-column:  svc_lost_proc
+2018-11-23 15:02:36 - dist.py:993 - new-svc:     IPAY_QRY_004_04
+2018-11-23 15:02:36 - dist.py:980 - event: [0] => [FIRED()]
+2018-11-23 15:02:36 - dist.py:1008 - new-list: ["insert into est_event_expr (event_expr_id, event_expr_type, serial_no, event_expr_proc, event_expr_desc, comp_id) values ('03021', '0', '1', 'FIRED()', '', '')"]
+2018-11-23 15:02:36 - dist.py:1014 - new-list: ["insert into est_event_expr (event_expr_id, event_expr_type, serial_no, event_expr_proc, event_expr_desc, comp_id) values ('03021', '0', '1', 'FIRED()', '', '')", "update est_svc_logic set svc_lost_proc = '03021' where svc_name = 'IPAY_QRY_004_04'"]
+2018-11-23 15:02:36 - dist.py:1017 - insert into est_event_expr (event_expr_id, event_expr_type, serial_no, event_expr_proc, event_expr_desc, comp_id) values ('03021', '0', '1', 'FIRED()', '', '')
+2018-11-23 15:02:36 - dist.py:1017 - update est_svc_logic set svc_lost_proc = '03021' where svc_name = 'IPAY_QRY_004_04'
+2018-11-23 15:02:36 - dist.py:1098 - 
+2018-11-23 15:03:40 - sailog.py:74 - 
+/_/_/_/_/_/_/_/_/_/_/_/_/_/_/_/_/_/_/_/_/_/_/_/_/_/_/_/_/_/_/_/_/_/_/_/_/_/_/_/_/_/
+2018-11-23 15:03:40 - dist.py:1405 - db-name: PCIP
+2018-11-23 15:03:40 - dist.py:1448 - to set_proc
+2018-11-23 15:03:40 - dist.py:1341 - dist_set_proc: --- RES and LOG ---
+2018-11-23 15:03:40 - dist.py:1345 - proc-action-file: my_proc.txt
+2018-11-23 15:03:40 - dist.py:1118 - --------------------------------------------------------------------------------
+2018-11-23 15:03:40 - dist.py:1068 - action: MOD - IPAY_QRY_004_04 - BEFORE_PROC - svc_pre_proc
+2018-11-23 15:03:40 - dist.py:1072 - MOD: [IPAY_QRY_004_04] => [DCSDBReConnect("PCIPDB00", "PCIPDB17")|abc]
+2018-11-23 15:03:40 - dist.py:1080 - proc: svc_pre_proc => 03016
+2018-11-23 15:03:40 - dist.py:1091 - proc-id already exist, delete and insert: 03016
+2018-11-23 15:03:40 - dist.py:1023 - old-exprs:   DCSDBReConnect("PCIPDB00", "PCIPDB17")|abc
+2018-11-23 15:03:40 - dist.py:1024 - old-procid:  03016
+2018-11-23 15:03:40 - dist.py:1031 - old-delete: delete from est_event_expr where event_expr_id = '03016'
+2018-11-23 15:03:40 - dist.py:980 - event: [0] => [DCSDBReConnect("PCIPDB00", "PCIPDB17")]
+2018-11-23 15:03:40 - dist.py:980 - event: [1] => [abc]
+2018-11-23 15:03:40 - dist.py:1039 - delete from est_event_expr where event_expr_id = '03016'
+2018-11-23 15:03:40 - dist.py:1039 - insert into est_event_expr (event_expr_id, event_expr_type, serial_no, event_expr_proc, event_expr_desc, comp_id) values ('03016', '0', '1', 'DCSDBReConnect("PCIPDB00", "PCIPDB17")', '', '')
+2018-11-23 15:03:40 - dist.py:1039 - insert into est_event_expr (event_expr_id, event_expr_type, serial_no, event_expr_proc, event_expr_desc, comp_id) values ('03016', '0', '2', 'abc', '', '')
+2018-11-23 15:03:40 - dist.py:1096 - 
+2018-11-23 15:03:40 - dist.py:1118 - --------------------------------------------------------------------------------
+2018-11-23 15:03:40 - dist.py:1068 - action: MOD - IPAY_QRY_004_04 - SUCC_PROC - svc_succ_proc
+2018-11-23 15:03:40 - dist.py:1072 - MOD: [IPAY_QRY_004_04] => [GOOD()|]
+2018-11-23 15:03:40 - dist.py:1080 - proc: svc_succ_proc => 03017
+2018-11-23 15:03:40 - dist.py:1091 - proc-id already exist, delete and insert: 03017
+2018-11-23 15:03:40 - dist.py:1023 - old-exprs:   GOOD()|
+2018-11-23 15:03:40 - dist.py:1024 - old-procid:  03017
+2018-11-23 15:03:40 - dist.py:1031 - old-delete: delete from est_event_expr where event_expr_id = '03017'
+2018-11-23 15:03:40 - dist.py:980 - event: [0] => [GOOD()]
+2018-11-23 15:03:40 - dist.py:1039 - delete from est_event_expr where event_expr_id = '03017'
+2018-11-23 15:03:40 - dist.py:1039 - insert into est_event_expr (event_expr_id, event_expr_type, serial_no, event_expr_proc, event_expr_desc, comp_id) values ('03017', '0', '1', 'GOOD()', '', '')
+2018-11-23 15:03:40 - dist.py:1096 - 
+2018-11-23 15:03:40 - dist.py:1118 - --------------------------------------------------------------------------------
+2018-11-23 15:03:40 - dist.py:1068 - action: MOD - IPAY_QRY_004_04 - FAIL_PROC - svc_lost_proc
+2018-11-23 15:03:40 - dist.py:1072 - MOD: [IPAY_QRY_004_04] => [FIRED()|]
+2018-11-23 15:03:40 - dist.py:1080 - proc: svc_lost_proc => 
+2018-11-23 15:03:40 - dist.py:1084 - proc-id not exist, create it
+2018-11-23 15:03:40 - dist.py:991 - new-exprs:   FIRED()|
+2018-11-23 15:03:40 - dist.py:992 - new-column:  svc_lost_proc
+2018-11-23 15:03:40 - dist.py:993 - new-svc:     IPAY_QRY_004_04
+2018-11-23 15:03:40 - dist.py:980 - event: [0] => [FIRED()]
+2018-11-23 15:03:40 - dist.py:1015 - insert into est_event_expr (event_expr_id, event_expr_type, serial_no, event_expr_proc, event_expr_desc, comp_id) values ('03022', '0', '1', 'FIRED()', '', '')
+2018-11-23 15:03:40 - dist.py:1015 - update est_svc_logic set svc_lost_proc = '03022' where svc_name = 'IPAY_QRY_004_04'
+2018-11-23 15:03:40 - dist.py:1096 - 
+2018-11-23 15:04:26 - sailog.py:74 - 
+/_/_/_/_/_/_/_/_/_/_/_/_/_/_/_/_/_/_/_/_/_/_/_/_/_/_/_/_/_/_/_/_/_/_/_/_/_/_/_/_/_/
+2018-11-23 15:04:26 - dist.py:1405 - db-name: PCIP
+2018-11-23 15:04:26 - dist.py:1448 - to set_proc
+2018-11-23 15:04:26 - dist.py:1341 - dist_set_proc: --- RES and LOG ---
+2018-11-23 15:04:26 - dist.py:1345 - proc-action-file: my_proc.txt
+2018-11-23 15:04:26 - dist.py:1118 - --------------------------------------------------------------------------------
+2018-11-23 15:04:26 - dist.py:1068 - action: MOD - IPAY_QRY_004_04 - BEFORE_PROC - svc_pre_proc
+2018-11-23 15:04:26 - dist.py:1072 - MOD: [IPAY_QRY_004_04] => [DCSDBReConnect("PCIPDB00", "PCIPDB17")|abc]
+2018-11-23 15:04:26 - dist.py:1080 - proc: svc_pre_proc => 03016
+2018-11-23 15:04:26 - dist.py:1091 - proc-id already exist, delete and insert: 03016
+2018-11-23 15:04:26 - dist.py:1023 - old-exprs:   DCSDBReConnect("PCIPDB00", "PCIPDB17")|abc
+2018-11-23 15:04:26 - dist.py:1024 - old-procid:  03016
+2018-11-23 15:04:26 - dist.py:1031 - old-delete: delete from est_event_expr where event_expr_id = '03016'
+2018-11-23 15:04:26 - dist.py:980 - event: [0] => [DCSDBReConnect("PCIPDB00", "PCIPDB17")]
+2018-11-23 15:04:26 - dist.py:980 - event: [1] => [abc]
+2018-11-23 15:04:26 - dist.py:1039 - delete from est_event_expr where event_expr_id = '03016'
+2018-11-23 15:04:26 - dist.py:1039 - insert into est_event_expr (event_expr_id, event_expr_type, serial_no, event_expr_proc, event_expr_desc, comp_id) values ('03016', '0', '1', 'DCSDBReConnect("PCIPDB00", "PCIPDB17")', '', '')
+2018-11-23 15:04:26 - dist.py:1039 - insert into est_event_expr (event_expr_id, event_expr_type, serial_no, event_expr_proc, event_expr_desc, comp_id) values ('03016', '0', '2', 'abc', '', '')
+2018-11-23 15:04:26 - dist.py:1096 - 
+2018-11-23 15:04:26 - dist.py:1118 - --------------------------------------------------------------------------------
+2018-11-23 15:04:26 - dist.py:1068 - action: MOD - IPAY_QRY_004_04 - SUCC_PROC - svc_succ_proc
+2018-11-23 15:04:26 - dist.py:1072 - MOD: [IPAY_QRY_004_04] => [GOOD()|]
+2018-11-23 15:04:26 - dist.py:1080 - proc: svc_succ_proc => 03017
+2018-11-23 15:04:26 - dist.py:1091 - proc-id already exist, delete and insert: 03017
+2018-11-23 15:04:26 - dist.py:1023 - old-exprs:   GOOD()|
+2018-11-23 15:04:26 - dist.py:1024 - old-procid:  03017
+2018-11-23 15:04:26 - dist.py:1031 - old-delete: delete from est_event_expr where event_expr_id = '03017'
+2018-11-23 15:04:26 - dist.py:980 - event: [0] => [GOOD()]
+2018-11-23 15:04:26 - dist.py:1039 - delete from est_event_expr where event_expr_id = '03017'
+2018-11-23 15:04:26 - dist.py:1039 - insert into est_event_expr (event_expr_id, event_expr_type, serial_no, event_expr_proc, event_expr_desc, comp_id) values ('03017', '0', '1', 'GOOD()', '', '')
+2018-11-23 15:04:26 - dist.py:1096 - 
+2018-11-23 15:04:26 - dist.py:1118 - --------------------------------------------------------------------------------
+2018-11-23 15:04:26 - dist.py:1064 - error: invalid type FAIl_PROC
+2018-11-23 15:04:26 - dist.py:1123 - error: dist_svc_proc_one
+2018-11-23 15:04:26 - dist.py:1350 - error: dist_svc_proc_file
+2018-11-23 15:04:52 - sailog.py:74 - 
+/_/_/_/_/_/_/_/_/_/_/_/_/_/_/_/_/_/_/_/_/_/_/_/_/_/_/_/_/_/_/_/_/_/_/_/_/_/_/_/_/_/
+2018-11-23 15:04:52 - dist.py:1405 - db-name: PCIP
+2018-11-23 15:04:52 - dist.py:1448 - to set_proc
+2018-11-23 15:04:52 - dist.py:1341 - dist_set_proc: --- RES and LOG ---
+2018-11-23 15:04:52 - dist.py:1345 - proc-action-file: my_proc.txt
+2018-11-23 15:04:52 - dist.py:1118 - --------------------------------------------------------------------------------
+2018-11-23 15:04:52 - dist.py:1068 - action: MOD - IPAY_QRY_004_04 - BEFORE_PROC - svc_pre_proc
+2018-11-23 15:04:52 - dist.py:1072 - MOD: [IPAY_QRY_004_04] => [DCSDBReConnect("PCIPDB00", "PCIPDB17")|abc]
+2018-11-23 15:04:52 - dist.py:1080 - proc: svc_pre_proc => 03016
+2018-11-23 15:04:52 - dist.py:1091 - proc-id already exist, delete and insert: 03016
+2018-11-23 15:04:52 - dist.py:1023 - old-exprs:   DCSDBReConnect("PCIPDB00", "PCIPDB17")|abc
+2018-11-23 15:04:52 - dist.py:1024 - old-procid:  03016
+2018-11-23 15:04:52 - dist.py:1031 - old-delete: delete from est_event_expr where event_expr_id = '03016'
+2018-11-23 15:04:52 - dist.py:980 - event: [0] => [DCSDBReConnect("PCIPDB00", "PCIPDB17")]
+2018-11-23 15:04:52 - dist.py:980 - event: [1] => [abc]
+2018-11-23 15:04:52 - dist.py:1039 - delete from est_event_expr where event_expr_id = '03016'
+2018-11-23 15:04:52 - dist.py:1039 - insert into est_event_expr (event_expr_id, event_expr_type, serial_no, event_expr_proc, event_expr_desc, comp_id) values ('03016', '0', '1', 'DCSDBReConnect("PCIPDB00", "PCIPDB17")', '', '')
+2018-11-23 15:04:52 - dist.py:1039 - insert into est_event_expr (event_expr_id, event_expr_type, serial_no, event_expr_proc, event_expr_desc, comp_id) values ('03016', '0', '2', 'abc', '', '')
+2018-11-23 15:04:52 - dist.py:1096 - 
+2018-11-23 15:04:52 - dist.py:1118 - --------------------------------------------------------------------------------
+2018-11-23 15:04:52 - dist.py:1068 - action: MOD - IPAY_QRY_004_04 - SUCC_PROC - svc_succ_proc
+2018-11-23 15:04:52 - dist.py:1072 - MOD: [IPAY_QRY_004_04] => [GOOD()|]
+2018-11-23 15:04:52 - dist.py:1080 - proc: svc_succ_proc => 03017
+2018-11-23 15:04:52 - dist.py:1091 - proc-id already exist, delete and insert: 03017
+2018-11-23 15:04:52 - dist.py:1023 - old-exprs:   GOOD()|
+2018-11-23 15:04:52 - dist.py:1024 - old-procid:  03017
+2018-11-23 15:04:52 - dist.py:1031 - old-delete: delete from est_event_expr where event_expr_id = '03017'
+2018-11-23 15:04:52 - dist.py:980 - event: [0] => [GOOD()]
+2018-11-23 15:04:52 - dist.py:1039 - delete from est_event_expr where event_expr_id = '03017'
+2018-11-23 15:04:52 - dist.py:1039 - insert into est_event_expr (event_expr_id, event_expr_type, serial_no, event_expr_proc, event_expr_desc, comp_id) values ('03017', '0', '1', 'GOOD()', '', '')
+2018-11-23 15:04:52 - dist.py:1096 - 
+2018-11-23 15:04:52 - dist.py:1118 - --------------------------------------------------------------------------------
+2018-11-23 15:04:52 - dist.py:1064 - error: invalid type FAIl_PROC
+2018-11-23 15:04:52 - dist.py:1123 - error: dist_svc_proc_one
+2018-11-23 15:04:52 - dist.py:1350 - error: dist_svc_proc_file
+2018-11-23 15:05:25 - sailog.py:74 - 
+/_/_/_/_/_/_/_/_/_/_/_/_/_/_/_/_/_/_/_/_/_/_/_/_/_/_/_/_/_/_/_/_/_/_/_/_/_/_/_/_/_/
+2018-11-23 15:05:25 - dist.py:1405 - db-name: PCIP
+2018-11-23 15:05:25 - dist.py:1448 - to set_proc
+2018-11-23 15:05:25 - dist.py:1341 - dist_set_proc: --- RES and LOG ---
+2018-11-23 15:05:25 - dist.py:1345 - proc-action-file: my_proc.txt
+2018-11-23 15:05:25 - dist.py:1118 - --------------------------------------------------------------------------------
+2018-11-23 15:05:25 - dist.py:1068 - action: MOD - IPAY_QRY_004_04 - BEFORE_PROC - svc_pre_proc
+2018-11-23 15:05:25 - dist.py:1072 - MOD: [IPAY_QRY_004_04] => [DCSDBReConnect("PCIPDB00", "PCIPDB17")|abc]
+2018-11-23 15:05:25 - dist.py:1080 - proc: svc_pre_proc => 03016
+2018-11-23 15:05:25 - dist.py:1091 - proc-id already exist, delete and insert: 03016
+2018-11-23 15:05:25 - dist.py:1023 - old-exprs:   DCSDBReConnect("PCIPDB00", "PCIPDB17")|abc
+2018-11-23 15:05:25 - dist.py:1024 - old-procid:  03016
+2018-11-23 15:05:25 - dist.py:1031 - old-delete: delete from est_event_expr where event_expr_id = '03016'
+2018-11-23 15:05:25 - dist.py:980 - event: [0] => [DCSDBReConnect("PCIPDB00", "PCIPDB17")]
+2018-11-23 15:05:25 - dist.py:980 - event: [1] => [abc]
+2018-11-23 15:05:25 - dist.py:1039 - delete from est_event_expr where event_expr_id = '03016'
+2018-11-23 15:05:25 - dist.py:1039 - insert into est_event_expr (event_expr_id, event_expr_type, serial_no, event_expr_proc, event_expr_desc, comp_id) values ('03016', '0', '1', 'DCSDBReConnect("PCIPDB00", "PCIPDB17")', '', '')
+2018-11-23 15:05:25 - dist.py:1039 - insert into est_event_expr (event_expr_id, event_expr_type, serial_no, event_expr_proc, event_expr_desc, comp_id) values ('03016', '0', '2', 'abc', '', '')
+2018-11-23 15:05:25 - dist.py:1096 - 
+2018-11-23 15:05:25 - dist.py:1118 - --------------------------------------------------------------------------------
+2018-11-23 15:05:25 - dist.py:1068 - action: MOD - IPAY_QRY_004_04 - FAIL_PROC - svc_lost_proc
+2018-11-23 15:05:25 - dist.py:1072 - MOD: [IPAY_QRY_004_04] => [FIRED()|]
+2018-11-23 15:05:25 - dist.py:1080 - proc: svc_lost_proc => 
+2018-11-23 15:05:25 - dist.py:1084 - proc-id not exist, create it
+2018-11-23 15:05:25 - dist.py:991 - new-exprs:   FIRED()|
+2018-11-23 15:05:25 - dist.py:992 - new-column:  svc_lost_proc
+2018-11-23 15:05:25 - dist.py:993 - new-svc:     IPAY_QRY_004_04
+2018-11-23 15:05:25 - dist.py:980 - event: [0] => [FIRED()]
+2018-11-23 15:05:25 - dist.py:1015 - insert into est_event_expr (event_expr_id, event_expr_type, serial_no, event_expr_proc, event_expr_desc, comp_id) values ('03023', '0', '1', 'FIRED()', '', '')
+2018-11-23 15:05:25 - dist.py:1015 - update est_svc_logic set svc_lost_proc = '03023' where svc_name = 'IPAY_QRY_004_04'
+2018-11-23 15:05:25 - dist.py:1096 - 
+2018-11-23 15:05:25 - dist.py:1118 - --------------------------------------------------------------------------------
+2018-11-23 15:05:25 - dist.py:1064 - error: invalid type SUCc_PROC
+2018-11-23 15:05:25 - dist.py:1123 - error: dist_svc_proc_one
+2018-11-23 15:05:25 - dist.py:1350 - error: dist_svc_proc_file
+2018-11-23 15:05:28 - sailog.py:74 - 
+/_/_/_/_/_/_/_/_/_/_/_/_/_/_/_/_/_/_/_/_/_/_/_/_/_/_/_/_/_/_/_/_/_/_/_/_/_/_/_/_/_/
+2018-11-23 15:05:28 - dist.py:1405 - db-name: PCIP
+2018-11-23 15:05:28 - dist.py:1448 - to set_proc
+2018-11-23 15:05:28 - dist.py:1341 - dist_set_proc: --- RES and LOG ---
+2018-11-23 15:05:28 - dist.py:1345 - proc-action-file: my_proc.txt
+2018-11-23 15:05:28 - dist.py:1118 - --------------------------------------------------------------------------------
+2018-11-23 15:05:28 - dist.py:1068 - action: MOD - IPAY_QRY_004_04 - BEFORE_PROC - svc_pre_proc
+2018-11-23 15:05:28 - dist.py:1072 - MOD: [IPAY_QRY_004_04] => [DCSDBReConnect("PCIPDB00", "PCIPDB17")|abc]
+2018-11-23 15:05:28 - dist.py:1080 - proc: svc_pre_proc => 03016
+2018-11-23 15:05:28 - dist.py:1091 - proc-id already exist, delete and insert: 03016
+2018-11-23 15:05:28 - dist.py:1023 - old-exprs:   DCSDBReConnect("PCIPDB00", "PCIPDB17")|abc
+2018-11-23 15:05:28 - dist.py:1024 - old-procid:  03016
+2018-11-23 15:05:28 - dist.py:1031 - old-delete: delete from est_event_expr where event_expr_id = '03016'
+2018-11-23 15:05:28 - dist.py:980 - event: [0] => [DCSDBReConnect("PCIPDB00", "PCIPDB17")]
+2018-11-23 15:05:28 - dist.py:980 - event: [1] => [abc]
+2018-11-23 15:05:28 - dist.py:1039 - delete from est_event_expr where event_expr_id = '03016'
+2018-11-23 15:05:28 - dist.py:1039 - insert into est_event_expr (event_expr_id, event_expr_type, serial_no, event_expr_proc, event_expr_desc, comp_id) values ('03016', '0', '1', 'DCSDBReConnect("PCIPDB00", "PCIPDB17")', '', '')
+2018-11-23 15:05:28 - dist.py:1039 - insert into est_event_expr (event_expr_id, event_expr_type, serial_no, event_expr_proc, event_expr_desc, comp_id) values ('03016', '0', '2', 'abc', '', '')
+2018-11-23 15:05:28 - dist.py:1096 - 
+2018-11-23 15:05:28 - dist.py:1118 - --------------------------------------------------------------------------------
+2018-11-23 15:05:28 - dist.py:1068 - action: MOD - IPAY_QRY_004_04 - FAIL_PROC - svc_lost_proc
+2018-11-23 15:05:28 - dist.py:1072 - MOD: [IPAY_QRY_004_04] => [FIRED()|]
+2018-11-23 15:05:28 - dist.py:1080 - proc: svc_lost_proc => 
+2018-11-23 15:05:28 - dist.py:1084 - proc-id not exist, create it
+2018-11-23 15:05:28 - dist.py:991 - new-exprs:   FIRED()|
+2018-11-23 15:05:28 - dist.py:992 - new-column:  svc_lost_proc
+2018-11-23 15:05:28 - dist.py:993 - new-svc:     IPAY_QRY_004_04
+2018-11-23 15:05:28 - dist.py:980 - event: [0] => [FIRED()]
+2018-11-23 15:05:28 - dist.py:1015 - insert into est_event_expr (event_expr_id, event_expr_type, serial_no, event_expr_proc, event_expr_desc, comp_id) values ('03023', '0', '1', 'FIRED()', '', '')
+2018-11-23 15:05:28 - dist.py:1015 - update est_svc_logic set svc_lost_proc = '03023' where svc_name = 'IPAY_QRY_004_04'
+2018-11-23 15:05:28 - dist.py:1096 - 
+2018-11-23 15:05:28 - dist.py:1118 - --------------------------------------------------------------------------------
+2018-11-23 15:05:28 - dist.py:1064 - error: invalid type SUCc_PROC
+2018-11-23 15:05:28 - dist.py:1123 - error: dist_svc_proc_one
+2018-11-23 15:05:28 - dist.py:1350 - error: dist_svc_proc_file
+2018-11-23 15:23:49 - sailog.py:74 - 
+/_/_/_/_/_/_/_/_/_/_/_/_/_/_/_/_/_/_/_/_/_/_/_/_/_/_/_/_/_/_/_/_/_/_/_/_/_/_/_/_/_/
+2018-11-23 15:23:49 - dist.py:1407 - db-name: PCIP
+2018-11-23 15:23:49 - dist.py:1450 - to set_proc
+2018-11-23 15:23:49 - dist.py:1343 - dist_set_proc: --- RES and LOG ---
+2018-11-23 15:23:49 - dist.py:1347 - proc-action-file: my_proc.txt
+2018-11-23 15:23:49 - dist.py:1120 - --------------------------------------------------------------------------------
+2018-11-23 15:23:49 - dist.py:1069 - action: MOD - IPAY_QRY_004_04 - BEFORE_PROC - svc_pre_proc
+2018-11-23 15:23:49 - dist.py:1073 - MOD: [IPAY_QRY_004_04] => [DCSDBReConnect("PCIPDB00", "PCIPDB17")|abc]
+2018-11-23 15:23:49 - dist.py:1081 - proc: svc_pre_proc => 03016
+2018-11-23 15:23:49 - dist.py:1092 - proc-id already exist, delete and insert: 03016
+2018-11-23 15:23:49 - dist.py:1023 - old-exprs:   DCSDBReConnect("PCIPDB00", "PCIPDB17")|abc
+2018-11-23 15:23:49 - dist.py:1024 - old-procid:  03016
+2018-11-23 15:23:49 - dist.py:1031 - old-delete: delete from est_event_expr where event_expr_id = '03016'
+2018-11-23 15:23:49 - dist.py:980 - event: [0] => [DCSDBReConnect("PCIPDB00", "PCIPDB17")]
+2018-11-23 15:23:49 - dist.py:980 - event: [1] => [abc]
+2018-11-23 15:23:49 - dist.py:1096 - MOD process done: 3
+2018-11-23 15:23:49 - dist.py:1107 - proc-sql: delete from est_event_expr where event_expr_id = '03016'
+2018-11-23 15:23:50 - dist.py:1107 - proc-sql: insert into est_event_expr (event_expr_id, event_expr_type, serial_no, event_expr_proc, event_expr_desc, comp_id) values ('03016', '0', '1', 'DCSDBReConnect("PCIPDB00", "PCIPDB17")', '', '')
+2018-11-23 15:23:50 - dist.py:1107 - proc-sql: insert into est_event_expr (event_expr_id, event_expr_type, serial_no, event_expr_proc, event_expr_desc, comp_id) values ('03016', '0', '2', 'abc', '', '')
+2018-11-23 15:23:50 - dist.py:1120 - --------------------------------------------------------------------------------
+2018-11-23 15:23:50 - dist.py:1069 - action: MOD - IPAY_QRY_004_04 - FAIL_PROC - svc_lost_proc
+2018-11-23 15:23:50 - dist.py:1073 - MOD: [IPAY_QRY_004_04] => [FIRED()|]
+2018-11-23 15:23:50 - dist.py:1081 - proc: svc_lost_proc => 
+2018-11-23 15:23:50 - dist.py:1085 - proc-id not exist, create it
+2018-11-23 15:23:50 - dist.py:991 - new-exprs:   FIRED()|
+2018-11-23 15:23:50 - dist.py:992 - new-column:  svc_lost_proc
+2018-11-23 15:23:50 - dist.py:993 - new-svc:     IPAY_QRY_004_04
+2018-11-23 15:23:50 - dist.py:980 - event: [0] => [FIRED()]
+2018-11-23 15:23:50 - dist.py:1096 - MOD process done: 2
+2018-11-23 15:23:50 - dist.py:1107 - proc-sql: insert into est_event_expr (event_expr_id, event_expr_type, serial_no, event_expr_proc, event_expr_desc, comp_id) values ('03023', '0', '1', 'FIRED()', '', '')
+2018-11-23 15:23:50 - dist.py:1107 - proc-sql: update est_svc_logic set svc_lost_proc = '03023' where svc_name = 'IPAY_QRY_004_04'
+2018-11-23 15:23:50 - dist.py:1120 - --------------------------------------------------------------------------------
+2018-11-23 15:23:50 - dist.py:1065 - error: invalid type SUCc_PROC
+2018-11-23 15:23:50 - dist.py:1125 - error: dist_svc_proc_one
+2018-11-23 15:23:50 - dist.py:1352 - error: dist_svc_proc_file
+2018-11-23 15:24:06 - sailog.py:74 - 
+/_/_/_/_/_/_/_/_/_/_/_/_/_/_/_/_/_/_/_/_/_/_/_/_/_/_/_/_/_/_/_/_/_/_/_/_/_/_/_/_/_/
+2018-11-23 15:24:06 - dist.py:1407 - db-name: PCIP
+2018-11-23 15:24:06 - dist.py:1450 - to set_proc
+2018-11-23 15:24:06 - dist.py:1343 - dist_set_proc: --- RES and LOG ---
+2018-11-23 15:24:06 - dist.py:1347 - proc-action-file: my_proc.txt
+2018-11-23 15:24:06 - dist.py:1120 - --------------------------------------------------------------------------------
+2018-11-23 15:24:06 - dist.py:1069 - action: MOD - IPAY_QRY_004_04 - BEFORE_PROC - svc_pre_proc
+2018-11-23 15:24:06 - dist.py:1073 - MOD: [IPAY_QRY_004_04] => [DCSDBReConnect("PCIPDB00", "PCIPDB17")|abc]
+2018-11-23 15:24:06 - dist.py:1081 - proc: svc_pre_proc => 03016
+2018-11-23 15:24:06 - dist.py:1092 - proc-id already exist, delete and insert: 03016
+2018-11-23 15:24:06 - dist.py:1023 - old-exprs:   DCSDBReConnect("PCIPDB00", "PCIPDB17")|abc
+2018-11-23 15:24:06 - dist.py:1024 - old-procid:  03016
+2018-11-23 15:24:06 - dist.py:1031 - old-delete: delete from est_event_expr where event_expr_id = '03016'
+2018-11-23 15:24:06 - dist.py:980 - event: [0] => [DCSDBReConnect("PCIPDB00", "PCIPDB17")]
+2018-11-23 15:24:06 - dist.py:980 - event: [1] => [abc]
+2018-11-23 15:24:06 - dist.py:1096 - MOD process done: 3
+2018-11-23 15:24:06 - dist.py:1107 - proc-sql: delete from est_event_expr where event_expr_id = '03016'
+2018-11-23 15:24:06 - dist.py:1107 - proc-sql: insert into est_event_expr (event_expr_id, event_expr_type, serial_no, event_expr_proc, event_expr_desc, comp_id) values ('03016', '0', '1', 'DCSDBReConnect("PCIPDB00", "PCIPDB17")', '', '')
+2018-11-23 15:24:06 - dist.py:1107 - proc-sql: insert into est_event_expr (event_expr_id, event_expr_type, serial_no, event_expr_proc, event_expr_desc, comp_id) values ('03016', '0', '2', 'abc', '', '')
+2018-11-23 15:24:06 - dist.py:1120 - --------------------------------------------------------------------------------
+2018-11-23 15:24:06 - dist.py:1069 - action: MOD - IPAY_QRY_004_04 - FAIL_PROC - svc_lost_proc
+2018-11-23 15:24:06 - dist.py:1073 - MOD: [IPAY_QRY_004_04] => [FIRED()|]
+2018-11-23 15:24:06 - dist.py:1081 - proc: svc_lost_proc => 
+2018-11-23 15:24:06 - dist.py:1085 - proc-id not exist, create it
+2018-11-23 15:24:06 - dist.py:991 - new-exprs:   FIRED()|
+2018-11-23 15:24:06 - dist.py:992 - new-column:  svc_lost_proc
+2018-11-23 15:24:06 - dist.py:993 - new-svc:     IPAY_QRY_004_04
+2018-11-23 15:24:06 - dist.py:980 - event: [0] => [FIRED()]
+2018-11-23 15:24:06 - dist.py:1096 - MOD process done: 2
+2018-11-23 15:24:06 - dist.py:1107 - proc-sql: insert into est_event_expr (event_expr_id, event_expr_type, serial_no, event_expr_proc, event_expr_desc, comp_id) values ('03023', '0', '1', 'FIRED()', '', '')
+2018-11-23 15:24:06 - dist.py:1107 - proc-sql: update est_svc_logic set svc_lost_proc = '03023' where svc_name = 'IPAY_QRY_004_04'
+2018-11-23 15:24:06 - dist.py:1120 - --------------------------------------------------------------------------------
+2018-11-23 15:24:06 - dist.py:1065 - error: invalid type SUCc_PROC
+2018-11-23 15:24:06 - dist.py:1125 - error: dist_svc_proc_one
+2018-11-23 15:24:06 - dist.py:1352 - error: dist_svc_proc_file
+2018-11-23 15:25:24 - sailog.py:74 - 
+/_/_/_/_/_/_/_/_/_/_/_/_/_/_/_/_/_/_/_/_/_/_/_/_/_/_/_/_/_/_/_/_/_/_/_/_/_/_/_/_/_/
+2018-11-23 15:25:24 - dist.py:1407 - db-name: PCIP
+2018-11-23 15:25:24 - dist.py:1450 - to set_proc
+2018-11-23 15:25:24 - dist.py:1343 - dist_set_proc: --- RES and LOG ---
+2018-11-23 15:25:24 - dist.py:1347 - proc-action-file: my_proc.txt
+2018-11-23 15:25:24 - dist.py:1120 - --------------------------------------------------------------------------------
+2018-11-23 15:25:24 - dist.py:1069 - action: MOD - IPAY_QRY_004_04 - BEFORE_PROC - svc_pre_proc
+2018-11-23 15:25:24 - dist.py:1073 - MOD: [IPAY_QRY_004_04] => [DCSDBReConnect("PCIPDB00", "PCIPDB17")|abc]
+2018-11-23 15:25:24 - dist.py:1081 - proc: svc_pre_proc => 03016
+2018-11-23 15:25:24 - dist.py:1092 - proc-id already exist, delete and insert: 03016
+2018-11-23 15:25:24 - dist.py:1023 - old-exprs:   DCSDBReConnect("PCIPDB00", "PCIPDB17")|abc
+2018-11-23 15:25:24 - dist.py:1024 - old-procid:  03016
+2018-11-23 15:25:24 - dist.py:1031 - old-delete: delete from est_event_expr where event_expr_id = '03016'
+2018-11-23 15:25:24 - dist.py:980 - event: [0] => [DCSDBReConnect("PCIPDB00", "PCIPDB17")]
+2018-11-23 15:25:24 - dist.py:980 - event: [1] => [abc]
+2018-11-23 15:25:24 - dist.py:1096 - MOD process done: 3
+2018-11-23 15:25:24 - dist.py:1107 - proc-sql: delete from est_event_expr where event_expr_id = '03016'
+2018-11-23 15:25:24 - dist.py:1107 - proc-sql: insert into est_event_expr (event_expr_id, event_expr_type, serial_no, event_expr_proc, event_expr_desc, comp_id) values ('03016', '0', '1', 'DCSDBReConnect("PCIPDB00", "PCIPDB17")', '', '')
+2018-11-23 15:25:24 - dist.py:1107 - proc-sql: insert into est_event_expr (event_expr_id, event_expr_type, serial_no, event_expr_proc, event_expr_desc, comp_id) values ('03016', '0', '2', 'abc', '', '')
+2018-11-23 15:25:24 - dist.py:1120 - --------------------------------------------------------------------------------
+2018-11-23 15:25:24 - dist.py:1069 - action: MOD - IPAY_QRY_004_04 - FAIL_PROC - svc_lost_proc
+2018-11-23 15:25:24 - dist.py:1073 - MOD: [IPAY_QRY_004_04] => [FIRED()|]
+2018-11-23 15:25:24 - dist.py:1081 - proc: svc_lost_proc => 
+2018-11-23 15:25:24 - dist.py:1085 - proc-id not exist, create it
+2018-11-23 15:25:24 - dist.py:991 - new-exprs:   FIRED()|
+2018-11-23 15:25:24 - dist.py:992 - new-column:  svc_lost_proc
+2018-11-23 15:25:24 - dist.py:993 - new-svc:     IPAY_QRY_004_04
+2018-11-23 15:25:24 - dist.py:980 - event: [0] => [FIRED()]
+2018-11-23 15:25:24 - dist.py:1096 - MOD process done: 2
+2018-11-23 15:25:24 - dist.py:1107 - proc-sql: insert into est_event_expr (event_expr_id, event_expr_type, serial_no, event_expr_proc, event_expr_desc, comp_id) values ('03023', '0', '1', 'FIRED()', '', '')
+2018-11-23 15:25:24 - dist.py:1107 - proc-sql: update est_svc_logic set svc_lost_proc = '03023' where svc_name = 'IPAY_QRY_004_04'
+2018-11-23 15:25:24 - dist.py:1120 - --------------------------------------------------------------------------------
+2018-11-23 15:25:24 - dist.py:1069 - action: MOD - IPAY_QRY_004_04 - SUCC_PROC - svc_succ_proc
+2018-11-23 15:25:24 - dist.py:1073 - MOD: [IPAY_QRY_004_04] => [GOOD()|]
+2018-11-23 15:25:24 - dist.py:1081 - proc: svc_succ_proc => 03017
+2018-11-23 15:25:24 - dist.py:1092 - proc-id already exist, delete and insert: 03017
+2018-11-23 15:25:24 - dist.py:1023 - old-exprs:   GOOD()|
+2018-11-23 15:25:24 - dist.py:1024 - old-procid:  03017
+2018-11-23 15:25:24 - dist.py:1031 - old-delete: delete from est_event_expr where event_expr_id = '03017'
+2018-11-23 15:25:24 - dist.py:980 - event: [0] => [GOOD()]
+2018-11-23 15:25:24 - dist.py:1096 - MOD process done: 2
+2018-11-23 15:25:24 - dist.py:1107 - proc-sql: delete from est_event_expr where event_expr_id = '03017'
+2018-11-23 15:25:24 - dist.py:1107 - proc-sql: insert into est_event_expr (event_expr_id, event_expr_type, serial_no, event_expr_proc, event_expr_desc, comp_id) values ('03017', '0', '1', 'GOOD()', '', '')
+2018-11-23 15:37:11 - sailog.py:74 - 
+/_/_/_/_/_/_/_/_/_/_/_/_/_/_/_/_/_/_/_/_/_/_/_/_/_/_/_/_/_/_/_/_/_/_/_/_/_/_/_/_/_/
+2018-11-23 15:37:11 - dist.py:1415 - db-name: PCIP
+2018-11-23 15:37:11 - dist.py:1458 - to set_proc
+2018-11-23 15:37:11 - dist.py:1351 - dist_set_proc: --- RES and LOG ---
+2018-11-23 15:37:11 - dist.py:1355 - proc-action-file: my_proc.txt
+2018-11-23 15:37:11 - dist.py:1128 - --------------------------------------------------------------------------------
+2018-11-23 15:37:11 - dist.py:1072 - action: MOD - IPAY_QRY_004_04 - BEFORE_PROC - svc_pre_proc
+2018-11-23 15:37:11 - dist.py:1081 - proc: svc_pre_proc => 03016
+2018-11-23 15:37:11 - dist.py:1085 - MOD: [IPAY_QRY_004_04] => [DCSDBReConnect("PCIPDB00", "PCIPDB17")|abc]
+2018-11-23 15:37:11 - dist.py:1096 - proc-id already exist, delete and insert: 03016
+2018-11-23 15:37:11 - dist.py:1023 - old-exprs:   DCSDBReConnect("PCIPDB00", "PCIPDB17")|abc
+2018-11-23 15:37:11 - dist.py:1024 - old-procid:  03016
+2018-11-23 15:37:11 - dist.py:1031 - old-delete: delete from est_event_expr where event_expr_id = '03016'
+2018-11-23 15:37:11 - dist.py:980 - event: [0] => [DCSDBReConnect("PCIPDB00", "PCIPDB17")]
+2018-11-23 15:37:11 - dist.py:980 - event: [1] => [abc]
+2018-11-23 15:37:11 - dist.py:1100 - MOD process done: 3
+2018-11-23 15:37:11 - dist.py:1115 - proc-sql: delete from est_event_expr where event_expr_id = '03016'
+2018-11-23 15:37:11 - dist.py:1115 - proc-sql: insert into est_event_expr (event_expr_id, event_expr_type, serial_no, event_expr_proc, event_expr_desc, comp_id) values ('03016', '0', '1', 'DCSDBReConnect("PCIPDB00", "PCIPDB17")', '', '')
+2018-11-23 15:37:11 - dist.py:1115 - proc-sql: insert into est_event_expr (event_expr_id, event_expr_type, serial_no, event_expr_proc, event_expr_desc, comp_id) values ('03016', '0', '2', 'abc', '', '')
+2018-11-23 15:37:11 - dist.py:1128 - --------------------------------------------------------------------------------
+2018-11-23 15:37:11 - dist.py:1072 - action: MOD - IPAY_QRY_004_04 - FAIL_PROC - svc_lost_proc
+2018-11-23 15:37:11 - dist.py:1081 - proc: svc_lost_proc => 03023
+2018-11-23 15:37:11 - dist.py:1085 - MOD: [IPAY_QRY_004_04] => [FIRED()|]
+2018-11-23 15:37:11 - dist.py:1096 - proc-id already exist, delete and insert: 03023
+2018-11-23 15:37:11 - dist.py:1023 - old-exprs:   FIRED()|
+2018-11-23 15:37:11 - dist.py:1024 - old-procid:  03023
+2018-11-23 15:37:11 - dist.py:1031 - old-delete: delete from est_event_expr where event_expr_id = '03023'
+2018-11-23 15:37:11 - dist.py:980 - event: [0] => [FIRED()]
+2018-11-23 15:37:11 - dist.py:1100 - MOD process done: 2
+2018-11-23 15:37:11 - dist.py:1115 - proc-sql: delete from est_event_expr where event_expr_id = '03023'
+2018-11-23 15:37:11 - dist.py:1115 - proc-sql: insert into est_event_expr (event_expr_id, event_expr_type, serial_no, event_expr_proc, event_expr_desc, comp_id) values ('03023', '0', '1', 'FIRED()', '', '')
+2018-11-23 15:37:11 - dist.py:1128 - --------------------------------------------------------------------------------
+2018-11-23 15:37:11 - dist.py:1072 - action: MOD - IPAY_QRY_004_04 - SUCC_PROC - svc_succ_proc
+2018-11-23 15:37:11 - dist.py:1081 - proc: svc_succ_proc => 03017
+2018-11-23 15:37:11 - dist.py:1085 - MOD: [IPAY_QRY_004_04] => [GOOD()|]
+2018-11-23 15:37:11 - dist.py:1096 - proc-id already exist, delete and insert: 03017
+2018-11-23 15:37:11 - dist.py:1023 - old-exprs:   GOOD()|
+2018-11-23 15:37:11 - dist.py:1024 - old-procid:  03017
+2018-11-23 15:37:11 - dist.py:1031 - old-delete: delete from est_event_expr where event_expr_id = '03017'
+2018-11-23 15:37:11 - dist.py:980 - event: [0] => [GOOD()]
+2018-11-23 15:37:11 - dist.py:1100 - MOD process done: 2
+2018-11-23 15:37:11 - dist.py:1115 - proc-sql: delete from est_event_expr where event_expr_id = '03017'
+2018-11-23 15:37:11 - dist.py:1115 - proc-sql: insert into est_event_expr (event_expr_id, event_expr_type, serial_no, event_expr_proc, event_expr_desc, comp_id) values ('03017', '0', '1', 'GOOD()', '', '')
+2018-11-23 15:37:59 - sailog.py:74 - 
+/_/_/_/_/_/_/_/_/_/_/_/_/_/_/_/_/_/_/_/_/_/_/_/_/_/_/_/_/_/_/_/_/_/_/_/_/_/_/_/_/_/
+2018-11-23 15:37:59 - dist.py:1415 - db-name: PCIP
+2018-11-23 15:37:59 - dist.py:1458 - to set_proc
+2018-11-23 15:37:59 - dist.py:1351 - dist_set_proc: --- RES and LOG ---
+2018-11-23 15:37:59 - dist.py:1355 - proc-action-file: my_proc.txt
+2018-11-23 15:37:59 - dist.py:1128 - --------------------------------------------------------------------------------
+2018-11-23 15:37:59 - dist.py:1072 - action: MOD - IPAY_QRY_004_04 - BEFORE_PROC - svc_pre_proc
+2018-11-23 15:37:59 - dist.py:1081 - proc: svc_pre_proc => 03016
+2018-11-23 15:37:59 - dist.py:1085 - MOD: [IPAY_QRY_004_04] => [DCSDBReConnect("PCIPDB00", "PCIPDB17")|abc]
+2018-11-23 15:37:59 - dist.py:1096 - proc-id already exist, delete and insert: 03016
+2018-11-23 15:37:59 - dist.py:1023 - old-exprs:   DCSDBReConnect("PCIPDB00", "PCIPDB17")|abc
+2018-11-23 15:37:59 - dist.py:1024 - old-procid:  03016
+2018-11-23 15:37:59 - dist.py:1031 - old-delete: delete from est_event_expr where event_expr_id = '03016'
+2018-11-23 15:37:59 - dist.py:980 - event: [0] => [DCSDBReConnect("PCIPDB00", "PCIPDB17")]
+2018-11-23 15:37:59 - dist.py:980 - event: [1] => [abc]
+2018-11-23 15:37:59 - dist.py:1100 - MOD process done: 3
+2018-11-23 15:37:59 - dist.py:1115 - proc-sql: delete from est_event_expr where event_expr_id = '03016'
+2018-11-23 15:37:59 - dist.py:1115 - proc-sql: insert into est_event_expr (event_expr_id, event_expr_type, serial_no, event_expr_proc, event_expr_desc, comp_id) values ('03016', '0', '1', 'DCSDBReConnect("PCIPDB00", "PCIPDB17")', '', '')
+2018-11-23 15:37:59 - dist.py:1115 - proc-sql: insert into est_event_expr (event_expr_id, event_expr_type, serial_no, event_expr_proc, event_expr_desc, comp_id) values ('03016', '0', '2', 'abc', '', '')
+2018-11-23 15:37:59 - dist.py:1128 - --------------------------------------------------------------------------------
+2018-11-23 15:37:59 - dist.py:1072 - action: MOD - IPAY_QRY_004_04 - FAIL_PROC - svc_lost_proc
+2018-11-23 15:37:59 - dist.py:1081 - proc: svc_lost_proc => 03023
+2018-11-23 15:37:59 - dist.py:1085 - MOD: [IPAY_QRY_004_04] => [FIRED()|]
+2018-11-23 15:37:59 - dist.py:1096 - proc-id already exist, delete and insert: 03023
+2018-11-23 15:37:59 - dist.py:1023 - old-exprs:   FIRED()|
+2018-11-23 15:37:59 - dist.py:1024 - old-procid:  03023
+2018-11-23 15:37:59 - dist.py:1031 - old-delete: delete from est_event_expr where event_expr_id = '03023'
+2018-11-23 15:37:59 - dist.py:980 - event: [0] => [FIRED()]
+2018-11-23 15:37:59 - dist.py:1100 - MOD process done: 2
+2018-11-23 15:37:59 - dist.py:1115 - proc-sql: delete from est_event_expr where event_expr_id = '03023'
+2018-11-23 15:37:59 - dist.py:1115 - proc-sql: insert into est_event_expr (event_expr_id, event_expr_type, serial_no, event_expr_proc, event_expr_desc, comp_id) values ('03023', '0', '1', 'FIRED()', '', '')
+2018-11-23 15:37:59 - dist.py:1128 - --------------------------------------------------------------------------------
+2018-11-23 15:37:59 - dist.py:1072 - action: MOD - IPAY_QRY_004_04 - SUCC_PROC - svc_succ_proc
+2018-11-23 15:37:59 - dist.py:1081 - proc: svc_succ_proc => 03017
+2018-11-23 15:37:59 - dist.py:1085 - MOD: [IPAY_QRY_004_04] => [GOOD()|]
+2018-11-23 15:37:59 - dist.py:1096 - proc-id already exist, delete and insert: 03017
+2018-11-23 15:37:59 - dist.py:1023 - old-exprs:   GOOD()|
+2018-11-23 15:37:59 - dist.py:1024 - old-procid:  03017
+2018-11-23 15:37:59 - dist.py:1031 - old-delete: delete from est_event_expr where event_expr_id = '03017'
+2018-11-23 15:37:59 - dist.py:980 - event: [0] => [GOOD()]
+2018-11-23 15:37:59 - dist.py:1100 - MOD process done: 2
+2018-11-23 15:37:59 - dist.py:1115 - proc-sql: delete from est_event_expr where event_expr_id = '03017'
+2018-11-23 15:37:59 - dist.py:1115 - proc-sql: insert into est_event_expr (event_expr_id, event_expr_type, serial_no, event_expr_proc, event_expr_desc, comp_id) values ('03017', '0', '1', 'GOOD()', '', '')
+2018-11-23 15:37:59 - dist.py:1128 - --------------------------------------------------------------------------------
+2018-11-23 15:37:59 - dist.py:1072 - action: DEL - IPAY_QRY_004_04 - FAIL_PROC - svc_lost_proc
+2018-11-23 15:37:59 - dist.py:1081 - proc: svc_lost_proc => 03023
+2018-11-23 15:37:59 - dist.py:1102 - DEL: [IPAY_QRY_004_04] => [svc_lost_proc]
+2018-11-23 15:37:59 - dist.py:1115 - proc-sql: delete from est_event_expr where event_expr_id = '03023'
+2018-11-23 15:42:31 - sailog.py:74 - 
+/_/_/_/_/_/_/_/_/_/_/_/_/_/_/_/_/_/_/_/_/_/_/_/_/_/_/_/_/_/_/_/_/_/_/_/_/_/_/_/_/_/
+2018-11-23 15:42:31 - dist.py:1415 - db-name: PCIP
+2018-11-23 15:42:31 - dist.py:1458 - to set_proc
+2018-11-23 15:42:31 - dist.py:1351 - dist_set_proc: --- RES and LOG ---
+2018-11-23 15:42:31 - dist.py:1355 - proc-action-file: my_proc.txt
+2018-11-23 15:42:31 - dist.py:1128 - --------------------------------------------------------------------------------
+2018-11-23 15:42:31 - dist.py:1072 - action: MOD - IPAY_QRY_004_04 - BEFORE_PROC - svc_pre_proc
+2018-11-23 15:42:31 - dist.py:1081 - proc: svc_pre_proc => 03016
+2018-11-23 15:42:31 - dist.py:1085 - MOD: [IPAY_QRY_004_04] => [DCSDBReConnect("PCIPDB's", "PCIPDB18")|]
+2018-11-23 15:42:31 - dist.py:1096 - proc-id already exist, delete and insert: 03016
+2018-11-23 15:42:31 - dist.py:1023 - old-exprs:   DCSDBReConnect("PCIPDB's", "PCIPDB18")|
+2018-11-23 15:42:31 - dist.py:1024 - old-procid:  03016
+2018-11-23 15:42:31 - dist.py:1031 - old-delete: delete from est_event_expr where event_expr_id = '03016'
+2018-11-23 15:42:31 - dist.py:980 - event: [0] => [DCSDBReConnect("PCIPDB''s", "PCIPDB18")]
+2018-11-23 15:42:31 - dist.py:1100 - MOD process done: 2
+2018-11-23 15:42:31 - dist.py:1115 - proc-sql: delete from est_event_expr where event_expr_id = '03016'
+2018-11-23 15:42:31 - dist.py:1115 - proc-sql: insert into est_event_expr (event_expr_id, event_expr_type, serial_no, event_expr_proc, event_expr_desc, comp_id) values ('03016', '0', '1', 'DCSDBReConnect("PCIPDB''s", "PCIPDB18")', '', '')
+2018-11-23 15:42:31 - dist.py:1128 - --------------------------------------------------------------------------------
+2018-11-23 15:42:31 - dist.py:1072 - action: MOD - IPAY_QRY_004_04 - FAIL_PROC - svc_lost_proc
+2018-11-23 15:42:31 - dist.py:1081 - proc: svc_lost_proc => 03023
+2018-11-23 15:42:31 - dist.py:1085 - MOD: [IPAY_QRY_004_04] => [FIRED()|]
+2018-11-23 15:42:31 - dist.py:1096 - proc-id already exist, delete and insert: 03023
+2018-11-23 15:42:31 - dist.py:1023 - old-exprs:   FIRED()|
+2018-11-23 15:42:31 - dist.py:1024 - old-procid:  03023
+2018-11-23 15:42:31 - dist.py:1031 - old-delete: delete from est_event_expr where event_expr_id = '03023'
+2018-11-23 15:42:31 - dist.py:980 - event: [0] => [FIRED()]
+2018-11-23 15:42:31 - dist.py:1100 - MOD process done: 2
+2018-11-23 15:42:31 - dist.py:1115 - proc-sql: delete from est_event_expr where event_expr_id = '03023'
+2018-11-23 15:42:31 - dist.py:1115 - proc-sql: insert into est_event_expr (event_expr_id, event_expr_type, serial_no, event_expr_proc, event_expr_desc, comp_id) values ('03023', '0', '1', 'FIRED()', '', '')
+2018-11-23 15:42:31 - dist.py:1128 - --------------------------------------------------------------------------------
+2018-11-23 15:42:31 - dist.py:1072 - action: MOD - IPAY_QRY_004_04 - SUCC_PROC - svc_succ_proc
+2018-11-23 15:42:31 - dist.py:1081 - proc: svc_succ_proc => 03017
+2018-11-23 15:42:31 - dist.py:1085 - MOD: [IPAY_QRY_004_04] => [GOOD()|]
+2018-11-23 15:42:31 - dist.py:1096 - proc-id already exist, delete and insert: 03017
+2018-11-23 15:42:31 - dist.py:1023 - old-exprs:   GOOD()|
+2018-11-23 15:42:31 - dist.py:1024 - old-procid:  03017
+2018-11-23 15:42:31 - dist.py:1031 - old-delete: delete from est_event_expr where event_expr_id = '03017'
+2018-11-23 15:42:31 - dist.py:980 - event: [0] => [GOOD()]
+2018-11-23 15:42:31 - dist.py:1100 - MOD process done: 2
+2018-11-23 15:42:31 - dist.py:1115 - proc-sql: delete from est_event_expr where event_expr_id = '03017'
+2018-11-23 15:42:31 - dist.py:1115 - proc-sql: insert into est_event_expr (event_expr_id, event_expr_type, serial_no, event_expr_proc, event_expr_desc, comp_id) values ('03017', '0', '1', 'GOOD()', '', '')
+2018-11-23 15:42:31 - dist.py:1128 - --------------------------------------------------------------------------------
+2018-11-23 15:42:31 - dist.py:1072 - action: DEL - IPAY_QRY_004_04 - FAIL_PROC - svc_lost_proc
+2018-11-23 15:42:31 - dist.py:1081 - proc: svc_lost_proc => 03023
+2018-11-23 15:42:31 - dist.py:1102 - DEL: [IPAY_QRY_004_04] => [svc_lost_proc]
+2018-11-23 15:42:31 - dist.py:1115 - proc-sql: delete from est_event_expr where event_expr_id = '03023'
+2018-11-23 15:47:40 - sailog.py:74 - 
+/_/_/_/_/_/_/_/_/_/_/_/_/_/_/_/_/_/_/_/_/_/_/_/_/_/_/_/_/_/_/_/_/_/_/_/_/_/_/_/_/_/
+2018-11-23 15:47:40 - dist.py:1420 - db-name: PCIP
+2018-11-23 15:47:40 - dist.py:1463 - to set_proc
+2018-11-23 15:47:40 - dist.py:1356 - dist_set_proc: --- RES and LOG ---
+2018-11-23 15:47:40 - dist.py:1360 - proc-action-file: my_proc.txt
+2018-11-23 15:47:40 - dist.py:1128 - --------------------------------------------------------------------------------
+2018-11-23 15:47:40 - dist.py:1131 - ignore this line: # BEFORE_PROC, FAIL_PROC, SUCC_PROC
+2018-11-23 15:47:40 - dist.py:1128 - --------------------------------------------------------------------------------
+2018-11-23 15:47:40 - dist.py:1131 - ignore this line: #MOD,,, IPAY_QRY_004_04,,, BEFORE_PROC,,, DCSDBReConnect("PCIPDB's", "PCIPDB18")|
+2018-11-23 15:47:40 - dist.py:1128 - --------------------------------------------------------------------------------
+2018-11-23 15:47:40 - dist.py:1131 - ignore this line: #MOD,,, IPAY_QRY_004_04,,, FAIL_PROC,,, FIRED()|
+2018-11-23 15:47:40 - dist.py:1128 - --------------------------------------------------------------------------------
+2018-11-23 15:47:40 - dist.py:1131 - ignore this line: #MOD,,, IPAY_QRY_004_04,,, SUCC_PROC,,, GOOD()|
+2018-11-23 15:47:40 - dist.py:1128 - --------------------------------------------------------------------------------
+2018-11-23 15:47:40 - dist.py:1131 - ignore this line: #DEL,,, IPAY_QRY_004_04,,, FAIL_PROC
+2018-11-23 15:47:40 - dist.py:1128 - --------------------------------------------------------------------------------
+2018-11-23 15:47:40 - dist.py:1072 - action: DEL - IPAY_QRY_004_04 - BEFORE_PROC - svc_pre_proc
+2018-11-23 15:47:40 - dist.py:1081 - proc: svc_pre_proc => 03016
+2018-11-23 15:47:40 - dist.py:1102 - DEL: [IPAY_QRY_004_04] => [svc_pre_proc]
+2018-11-23 15:47:40 - dist.py:1115 - proc-sql: delete from est_event_expr where event_expr_id = '03016'
+2018-11-23 15:57:27 - sailog.py:74 - 
+/_/_/_/_/_/_/_/_/_/_/_/_/_/_/_/_/_/_/_/_/_/_/_/_/_/_/_/_/_/_/_/_/_/_/_/_/_/_/_/_/_/
+2018-11-23 15:57:27 - dist.py:1425 - db-name: PCIP
+2018-11-23 15:57:27 - dist.py:1468 - to set_proc
+2018-11-23 15:57:27 - dist.py:1361 - dist_set_proc: --- RES and LOG ---
+2018-11-23 15:57:27 - dist.py:1364 - proc-action-file: my_proc.txt2
+2018-11-23 15:57:35 - sailog.py:74 - 
+/_/_/_/_/_/_/_/_/_/_/_/_/_/_/_/_/_/_/_/_/_/_/_/_/_/_/_/_/_/_/_/_/_/_/_/_/_/_/_/_/_/
+2018-11-23 15:57:35 - dist.py:1425 - db-name: PCIP
+2018-11-23 15:57:35 - dist.py:1468 - to set_proc
+2018-11-23 15:57:35 - dist.py:1361 - dist_set_proc: --- RES and LOG ---
+2018-11-23 15:57:35 - dist.py:1364 - proc-action-file: my_proc.txt
+2018-11-23 15:57:35 - dist.py:1133 - --------------------------------------------------------------------------------
+2018-11-23 15:57:35 - dist.py:1136 - ignore this line: # BEFORE_PROC, FAIL_PROC, SUCC_PROC
+2018-11-23 15:57:35 - dist.py:1133 - --------------------------------------------------------------------------------
+2018-11-23 15:57:35 - dist.py:1136 - ignore this line: #MOD,,, IPAY_QRY_004_04,,, BEFORE_PROC,,, DCSDBReConnect("PCIPDB's", "PCIPDB18")|
+2018-11-23 15:57:35 - dist.py:1133 - --------------------------------------------------------------------------------
+2018-11-23 15:57:35 - dist.py:1136 - ignore this line: #MOD,,, IPAY_QRY_004_04,,, FAIL_PROC,,, FIRED()|
+2018-11-23 15:57:35 - dist.py:1133 - --------------------------------------------------------------------------------
+2018-11-23 15:57:35 - dist.py:1136 - ignore this line: #MOD,,, IPAY_QRY_004_04,,, SUCC_PROC,,, GOOD()|
+2018-11-23 15:57:35 - dist.py:1133 - --------------------------------------------------------------------------------
+2018-11-23 15:57:35 - dist.py:1136 - ignore this line: #DEL,,, IPAY_QRY_004_04,,, FAIL_PROC
+2018-11-23 15:57:35 - dist.py:1133 - --------------------------------------------------------------------------------
+2018-11-23 15:57:35 - dist.py:1077 - action: DEL - IPAY_QRY_004_04 - BEFORE_PROC - svc_pre_proc
+2018-11-23 15:57:35 - dist.py:1086 - proc: svc_pre_proc => 03016
+2018-11-23 15:57:35 - dist.py:1107 - DEL: [IPAY_QRY_004_04] => [svc_pre_proc]
+2018-11-23 15:57:35 - dist.py:1120 - proc-sql: delete from est_event_expr where event_expr_id = '03016'
+2018-11-23 15:57:35 - dist.py:1370 - set-svc-proc process file done
+2018-11-23 15:57:35 - dist.py:1374 - set-svc-proc commit done
+2018-11-23 15:59:03 - sailog.py:74 - 
+/_/_/_/_/_/_/_/_/_/_/_/_/_/_/_/_/_/_/_/_/_/_/_/_/_/_/_/_/_/_/_/_/_/_/_/_/_/_/_/_/_/
+2018-11-23 15:59:03 - dist.py:1425 - db-name: PCIP
+2018-11-23 15:59:03 - dist.py:1468 - to set_proc
+2018-11-23 15:59:03 - dist.py:1361 - dist_set_proc: --- RES and LOG ---
+2018-11-23 15:59:03 - dist.py:1364 - proc-action-file: my_proc.txt
+2018-11-23 15:59:03 - dist.py:1133 - --------------------------------------------------------------------------------
+2018-11-23 15:59:03 - dist.py:1136 - ignore this line: # BEFORE_PROC, FAIL_PROC, SUCC_PROC
+2018-11-23 15:59:03 - dist.py:1133 - --------------------------------------------------------------------------------
+2018-11-23 15:59:03 - dist.py:1077 - action: MOD - IPAY_QRY_004_04 - BEFORE_PROC - svc_pre_proc
+2018-11-23 15:59:03 - dist.py:1086 - proc: svc_pre_proc => 03016
+2018-11-23 15:59:03 - dist.py:1090 - MOD: [IPAY_QRY_004_04] => [DCSDBReConnect("PCIPDB's", "PCIPDB18")|]
+2018-11-23 15:59:03 - dist.py:1101 - proc-id already exist, delete and insert: 03016
+2018-11-23 15:59:03 - dist.py:1028 - old-exprs:   DCSDBReConnect("PCIPDB's", "PCIPDB18")|
+2018-11-23 15:59:03 - dist.py:1029 - old-procid:  03016
+2018-11-23 15:59:03 - dist.py:1036 - old-delete: delete from est_event_expr where event_expr_id = '03016'
+2018-11-23 15:59:03 - dist.py:985 - event: [0] => [DCSDBReConnect("PCIPDB''s", "PCIPDB18")]
+2018-11-23 15:59:03 - dist.py:1105 - MOD process done: 2
+2018-11-23 15:59:03 - dist.py:1120 - proc-sql: delete from est_event_expr where event_expr_id = '03016'
+2018-11-23 15:59:03 - dist.py:1120 - proc-sql: insert into est_event_expr (event_expr_id, event_expr_type, serial_no, event_expr_proc, event_expr_desc, comp_id) values ('03016', '0', '1', 'DCSDBReConnect("PCIPDB''s", "PCIPDB18")', '', '')
+2018-11-23 15:59:03 - dist.py:1133 - --------------------------------------------------------------------------------
+2018-11-23 15:59:03 - dist.py:1077 - action: MOD - IPAY_QRY_004_04 - FAIL_PROC - svc_lost_proc
+2018-11-23 15:59:03 - dist.py:1086 - proc: svc_lost_proc => 03023
+2018-11-23 15:59:03 - dist.py:1090 - MOD: [IPAY_QRY_004_04] => [FIRED()|]
+2018-11-23 15:59:03 - dist.py:1101 - proc-id already exist, delete and insert: 03023
+2018-11-23 15:59:03 - dist.py:1028 - old-exprs:   FIRED()|
+2018-11-23 15:59:03 - dist.py:1029 - old-procid:  03023
+2018-11-23 15:59:03 - dist.py:1036 - old-delete: delete from est_event_expr where event_expr_id = '03023'
+2018-11-23 15:59:03 - dist.py:985 - event: [0] => [FIRED()]
+2018-11-23 15:59:03 - dist.py:1105 - MOD process done: 2
+2018-11-23 15:59:03 - dist.py:1120 - proc-sql: delete from est_event_expr where event_expr_id = '03023'
+2018-11-23 15:59:03 - dist.py:1120 - proc-sql: insert into est_event_expr (event_expr_id, event_expr_type, serial_no, event_expr_proc, event_expr_desc, comp_id) values ('03023', '0', '1', 'FIRED()', '', '')
+2018-11-23 15:59:03 - dist.py:1133 - --------------------------------------------------------------------------------
+2018-11-23 15:59:03 - dist.py:1077 - action: MOD - IPAY_QRY_004_04 - SUCC_PROC - svc_succ_proc
+2018-11-23 15:59:03 - dist.py:1086 - proc: svc_succ_proc => 03017
+2018-11-23 15:59:03 - dist.py:1090 - MOD: [IPAY_QRY_004_04] => [GOOD()|]
+2018-11-23 15:59:03 - dist.py:1101 - proc-id already exist, delete and insert: 03017
+2018-11-23 15:59:03 - dist.py:1028 - old-exprs:   GOOD()|
+2018-11-23 15:59:03 - dist.py:1029 - old-procid:  03017
+2018-11-23 15:59:03 - dist.py:1036 - old-delete: delete from est_event_expr where event_expr_id = '03017'
+2018-11-23 15:59:03 - dist.py:985 - event: [0] => [GOOD()]
+2018-11-23 15:59:03 - dist.py:1105 - MOD process done: 2
+2018-11-23 15:59:03 - dist.py:1120 - proc-sql: delete from est_event_expr where event_expr_id = '03017'
+2018-11-23 15:59:03 - dist.py:1120 - proc-sql: insert into est_event_expr (event_expr_id, event_expr_type, serial_no, event_expr_proc, event_expr_desc, comp_id) values ('03017', '0', '1', 'GOOD()', '', '')
+2018-11-23 15:59:03 - dist.py:1133 - --------------------------------------------------------------------------------
+2018-11-23 15:59:03 - dist.py:1077 - action: DEL - IPAY_QRY_004_04 - FAIL_PROC - svc_lost_proc
+2018-11-23 15:59:03 - dist.py:1086 - proc: svc_lost_proc => 03023
+2018-11-23 15:59:03 - dist.py:1107 - DEL: [IPAY_QRY_004_04] => [svc_lost_proc]
+2018-11-23 15:59:03 - dist.py:1120 - proc-sql: delete from est_event_expr where event_expr_id = '03023'
+2018-11-23 15:59:03 - dist.py:1133 - --------------------------------------------------------------------------------
+2018-11-23 15:59:03 - dist.py:1077 - action: DEL - IPAY_QRY_004_04 - BEFORE_PROC - svc_pre_proc
+2018-11-23 15:59:03 - dist.py:1086 - proc: svc_pre_proc => 03016
+2018-11-23 15:59:03 - dist.py:1107 - DEL: [IPAY_QRY_004_04] => [svc_pre_proc]
+2018-11-23 15:59:03 - dist.py:1120 - proc-sql: delete from est_event_expr where event_expr_id = '03016'
+2018-11-23 15:59:03 - dist.py:1370 - set-svc-proc process file done
+2018-11-23 15:59:03 - dist.py:1374 - set-svc-proc commit done
+2018-11-23 16:00:40 - sailog.py:74 - 
+/_/_/_/_/_/_/_/_/_/_/_/_/_/_/_/_/_/_/_/_/_/_/_/_/_/_/_/_/_/_/_/_/_/_/_/_/_/_/_/_/_/
+2018-11-23 16:00:40 - dist.py:1428 - db-name: PCIP
+2018-11-23 16:00:40 - dist.py:1471 - to set_proc
+2018-11-23 16:00:40 - dist.py:1364 - dist_set_proc: --- RES and LOG ---
+2018-11-23 16:00:40 - dist.py:1367 - proc-action-file: my_proc.txt
+2018-11-23 16:00:40 - dist.py:1133 - --------------------------------------------------------------------------------
+2018-11-23 16:00:40 - dist.py:1136 - ignore this line: # BEFORE_PROC, FAIL_PROC, SUCC_PROC
+2018-11-23 16:00:40 - dist.py:1133 - --------------------------------------------------------------------------------
+2018-11-23 16:00:40 - dist.py:1077 - action: MOD - IPAY_QRY_004_04 - BEFORE_PROC - svc_pre_proc
+2018-11-23 16:00:40 - dist.py:1086 - proc: svc_pre_proc => 03016
+2018-11-23 16:00:40 - dist.py:1090 - MOD: [IPAY_QRY_004_04] => [DCSDBReConnect("PCIPDB's", "PCIPDB18")|]
+2018-11-23 16:00:40 - dist.py:1101 - proc-id already exist, delete and insert: 03016
+2018-11-23 16:00:40 - dist.py:1028 - old-exprs:   DCSDBReConnect("PCIPDB's", "PCIPDB18")|
+2018-11-23 16:00:40 - dist.py:1029 - old-procid:  03016
+2018-11-23 16:00:40 - dist.py:985 - event: [0] => [DCSDBReConnect("PCIPDB''s", "PCIPDB18")]
+2018-11-23 16:00:40 - dist.py:1105 - MOD process done: 2
+2018-11-23 16:00:40 - dist.py:1120 - proc-sql: delete from est_event_expr where event_expr_id = '03016'
+2018-11-23 16:00:40 - dist.py:1120 - proc-sql: insert into est_event_expr (event_expr_id, event_expr_type, serial_no, event_expr_proc, event_expr_desc, comp_id) values ('03016', '0', '1', 'DCSDBReConnect("PCIPDB''s", "PCIPDB18")', '', '')
+2018-11-23 16:00:40 - dist.py:1133 - --------------------------------------------------------------------------------
+2018-11-23 16:00:40 - dist.py:1077 - action: MOD - IPAY_QRY_004_04 - FAIL_PROC - svc_lost_proc
+2018-11-23 16:00:40 - dist.py:1086 - proc: svc_lost_proc => 03023
+2018-11-23 16:00:40 - dist.py:1090 - MOD: [IPAY_QRY_004_04] => [FIRED()|]
+2018-11-23 16:00:40 - dist.py:1101 - proc-id already exist, delete and insert: 03023
+2018-11-23 16:00:40 - dist.py:1028 - old-exprs:   FIRED()|
+2018-11-23 16:00:40 - dist.py:1029 - old-procid:  03023
+2018-11-23 16:00:40 - dist.py:985 - event: [0] => [FIRED()]
+2018-11-23 16:00:40 - dist.py:1105 - MOD process done: 2
+2018-11-23 16:00:40 - dist.py:1120 - proc-sql: delete from est_event_expr where event_expr_id = '03023'
+2018-11-23 16:00:40 - dist.py:1120 - proc-sql: insert into est_event_expr (event_expr_id, event_expr_type, serial_no, event_expr_proc, event_expr_desc, comp_id) values ('03023', '0', '1', 'FIRED()', '', '')
+2018-11-23 16:00:40 - dist.py:1133 - --------------------------------------------------------------------------------
+2018-11-23 16:00:40 - dist.py:1077 - action: MOD - IPAY_QRY_004_04 - SUCC_PROC - svc_succ_proc
+2018-11-23 16:00:40 - dist.py:1086 - proc: svc_succ_proc => 03017
+2018-11-23 16:00:40 - dist.py:1090 - MOD: [IPAY_QRY_004_04] => [GOOD()|]
+2018-11-23 16:00:40 - dist.py:1101 - proc-id already exist, delete and insert: 03017
+2018-11-23 16:00:40 - dist.py:1028 - old-exprs:   GOOD()|
+2018-11-23 16:00:40 - dist.py:1029 - old-procid:  03017
+2018-11-23 16:00:40 - dist.py:985 - event: [0] => [GOOD()]
+2018-11-23 16:00:40 - dist.py:1105 - MOD process done: 2
+2018-11-23 16:00:40 - dist.py:1120 - proc-sql: delete from est_event_expr where event_expr_id = '03017'
+2018-11-23 16:00:40 - dist.py:1120 - proc-sql: insert into est_event_expr (event_expr_id, event_expr_type, serial_no, event_expr_proc, event_expr_desc, comp_id) values ('03017', '0', '1', 'GOOD()', '', '')
+2018-11-23 16:00:40 - dist.py:1133 - --------------------------------------------------------------------------------
+2018-11-23 16:00:40 - dist.py:1077 - action: DEL - IPAY_QRY_004_04 - FAIL_PROC - svc_lost_proc
+2018-11-23 16:00:40 - dist.py:1086 - proc: svc_lost_proc => 03023
+2018-11-23 16:00:40 - dist.py:1107 - DEL: [IPAY_QRY_004_04] => [svc_lost_proc]
+2018-11-23 16:00:40 - dist.py:1120 - proc-sql: delete from est_event_expr where event_expr_id = '03023'
+2018-11-23 16:00:40 - dist.py:1133 - --------------------------------------------------------------------------------
+2018-11-23 16:00:40 - dist.py:1077 - action: DEL - IPAY_QRY_004_04 - BEFORE_PROC - svc_pre_proc
+2018-11-23 16:00:40 - dist.py:1086 - proc: svc_pre_proc => 03016
+2018-11-23 16:00:40 - dist.py:1107 - DEL: [IPAY_QRY_004_04] => [svc_pre_proc]
+2018-11-23 16:00:40 - dist.py:1120 - proc-sql: delete from est_event_expr where event_expr_id = '03016'
+2018-11-23 16:00:40 - dist.py:1147 - --------------------------------------------------------------------------------
+2018-11-23 16:00:40 - dist.py:1148 - --------------------------------------------------------------------------------
+2018-11-23 16:00:40 - dist.py:1149 - --------------------------------------------------------------------------------
+2018-11-23 16:00:40 - dist.py:1373 - set-svc-proc process file done
+2018-11-23 16:00:40 - dist.py:1377 - set-svc-proc commit done
+2018-11-23 16:01:38 - sailog.py:74 - 
+/_/_/_/_/_/_/_/_/_/_/_/_/_/_/_/_/_/_/_/_/_/_/_/_/_/_/_/_/_/_/_/_/_/_/_/_/_/_/_/_/_/
+2018-11-23 16:01:38 - dist.py:1428 - db-name: PCIP
+2018-11-23 16:01:38 - dist.py:1471 - to set_proc
+2018-11-23 16:01:38 - dist.py:1364 - dist_set_proc: --- RES and LOG ---
+2018-11-23 16:01:38 - dist.py:1367 - proc-action-file: my_proc.txt
+2018-11-23 16:01:38 - dist.py:1133 - --------------------------------------------------------------------------------
+2018-11-23 16:01:38 - dist.py:1136 - ignore this line: # BEFORE_PROC, FAIL_PROC, SUCC_PROC
+2018-11-23 16:01:38 - dist.py:1133 - --------------------------------------------------------------------------------
+2018-11-23 16:01:38 - dist.py:1077 - action: MOD - IPAY_QRY_004_04 - BEFORE_PROC - svc_pre_proc
+2018-11-23 16:01:38 - dist.py:1086 - proc: svc_pre_proc => 03016
+2018-11-23 16:01:38 - dist.py:1090 - MOD: [IPAY_QRY_004_04] => [DCSDBReConnect("PCIPDB's", "PCIPDB18")|ep_get()]
+2018-11-23 16:01:38 - dist.py:1101 - proc-id already exist, delete and insert: 03016
+2018-11-23 16:01:38 - dist.py:1028 - old-exprs:   DCSDBReConnect("PCIPDB's", "PCIPDB18")|ep_get()
+2018-11-23 16:01:38 - dist.py:1029 - old-procid:  03016
+2018-11-23 16:01:38 - dist.py:985 - event: [0] => [DCSDBReConnect("PCIPDB''s", "PCIPDB18")]
+2018-11-23 16:01:38 - dist.py:985 - event: [1] => [ep_get()]
+2018-11-23 16:01:38 - dist.py:1105 - MOD process done: 3
+2018-11-23 16:01:38 - dist.py:1120 - proc-sql: delete from est_event_expr where event_expr_id = '03016'
+2018-11-23 16:01:38 - dist.py:1120 - proc-sql: insert into est_event_expr (event_expr_id, event_expr_type, serial_no, event_expr_proc, event_expr_desc, comp_id) values ('03016', '0', '1', 'DCSDBReConnect("PCIPDB''s", "PCIPDB18")', '', '')
+2018-11-23 16:01:38 - dist.py:1120 - proc-sql: insert into est_event_expr (event_expr_id, event_expr_type, serial_no, event_expr_proc, event_expr_desc, comp_id) values ('03016', '0', '2', 'ep_get()', '', '')
+2018-11-23 16:01:38 - dist.py:1133 - --------------------------------------------------------------------------------
+2018-11-23 16:01:38 - dist.py:1077 - action: MOD - IPAY_QRY_004_04 - FAIL_PROC - svc_lost_proc
+2018-11-23 16:01:38 - dist.py:1086 - proc: svc_lost_proc => 03023
+2018-11-23 16:01:38 - dist.py:1090 - MOD: [IPAY_QRY_004_04] => [FIRED()|fail2()|]
+2018-11-23 16:01:38 - dist.py:1101 - proc-id already exist, delete and insert: 03023
+2018-11-23 16:01:38 - dist.py:1028 - old-exprs:   FIRED()|fail2()|
+2018-11-23 16:01:38 - dist.py:1029 - old-procid:  03023
+2018-11-23 16:01:38 - dist.py:985 - event: [0] => [FIRED()]
+2018-11-23 16:01:38 - dist.py:985 - event: [1] => [fail2()]
+2018-11-23 16:01:38 - dist.py:1105 - MOD process done: 3
+2018-11-23 16:01:38 - dist.py:1120 - proc-sql: delete from est_event_expr where event_expr_id = '03023'
+2018-11-23 16:01:38 - dist.py:1120 - proc-sql: insert into est_event_expr (event_expr_id, event_expr_type, serial_no, event_expr_proc, event_expr_desc, comp_id) values ('03023', '0', '1', 'FIRED()', '', '')
+2018-11-23 16:01:38 - dist.py:1120 - proc-sql: insert into est_event_expr (event_expr_id, event_expr_type, serial_no, event_expr_proc, event_expr_desc, comp_id) values ('03023', '0', '2', 'fail2()', '', '')
+2018-11-23 16:01:38 - dist.py:1133 - --------------------------------------------------------------------------------
+2018-11-23 16:01:38 - dist.py:1077 - action: MOD - IPAY_QRY_004_04 - SUCC_PROC - svc_succ_proc
+2018-11-23 16:01:38 - dist.py:1086 - proc: svc_succ_proc => 03017
+2018-11-23 16:01:38 - dist.py:1090 - MOD: [IPAY_QRY_004_04] => [GOOD()|good3()|good5()|]
+2018-11-23 16:01:38 - dist.py:1101 - proc-id already exist, delete and insert: 03017
+2018-11-23 16:01:38 - dist.py:1028 - old-exprs:   GOOD()|good3()|good5()|
+2018-11-23 16:01:38 - dist.py:1029 - old-procid:  03017
+2018-11-23 16:01:38 - dist.py:985 - event: [0] => [GOOD()]
+2018-11-23 16:01:38 - dist.py:985 - event: [1] => [good3()]
+2018-11-23 16:01:38 - dist.py:985 - event: [2] => [good5()]
+2018-11-23 16:01:38 - dist.py:1105 - MOD process done: 4
+2018-11-23 16:01:38 - dist.py:1120 - proc-sql: delete from est_event_expr where event_expr_id = '03017'
+2018-11-23 16:01:38 - dist.py:1120 - proc-sql: insert into est_event_expr (event_expr_id, event_expr_type, serial_no, event_expr_proc, event_expr_desc, comp_id) values ('03017', '0', '1', 'GOOD()', '', '')
+2018-11-23 16:01:38 - dist.py:1120 - proc-sql: insert into est_event_expr (event_expr_id, event_expr_type, serial_no, event_expr_proc, event_expr_desc, comp_id) values ('03017', '0', '2', 'good3()', '', '')
+2018-11-23 16:01:38 - dist.py:1120 - proc-sql: insert into est_event_expr (event_expr_id, event_expr_type, serial_no, event_expr_proc, event_expr_desc, comp_id) values ('03017', '0', '3', 'good5()', '', '')
+2018-11-23 16:01:38 - dist.py:1133 - --------------------------------------------------------------------------------
+2018-11-23 16:01:38 - dist.py:1077 - action: DEL - IPAY_QRY_004_04 - FAIL_PROC - svc_lost_proc
+2018-11-23 16:01:38 - dist.py:1086 - proc: svc_lost_proc => 03023
+2018-11-23 16:01:38 - dist.py:1107 - DEL: [IPAY_QRY_004_04] => [svc_lost_proc]
+2018-11-23 16:01:38 - dist.py:1120 - proc-sql: delete from est_event_expr where event_expr_id = '03023'
+2018-11-23 16:01:38 - dist.py:1133 - --------------------------------------------------------------------------------
+2018-11-23 16:01:38 - dist.py:1077 - action: DEL - IPAY_QRY_004_04 - BEFORE_PROC - svc_pre_proc
+2018-11-23 16:01:38 - dist.py:1086 - proc: svc_pre_proc => 03016
+2018-11-23 16:01:38 - dist.py:1107 - DEL: [IPAY_QRY_004_04] => [svc_pre_proc]
+2018-11-23 16:01:38 - dist.py:1120 - proc-sql: delete from est_event_expr where event_expr_id = '03016'
+2018-11-23 16:01:38 - dist.py:1147 - --------------------------------------------------------------------------------
+2018-11-23 16:01:38 - dist.py:1148 - --------------------------------------------------------------------------------
+2018-11-23 16:01:38 - dist.py:1149 - --------------------------------------------------------------------------------
+2018-11-23 16:01:38 - dist.py:1373 - set-svc-proc process file done
+2018-11-23 16:01:38 - dist.py:1377 - set-svc-proc commit done
+2018-11-23 16:08:43 - sailog.py:74 - 
+/_/_/_/_/_/_/_/_/_/_/_/_/_/_/_/_/_/_/_/_/_/_/_/_/_/_/_/_/_/_/_/_/_/_/_/_/_/_/_/_/_/
+2018-11-23 16:08:43 - dist.py:1433 - db-name: PCIP
+2018-11-23 16:08:43 - dist.py:1476 - to set_proc
+2018-11-23 16:08:43 - dist.py:1369 - dist_set_proc: --- RES and LOG ---
+2018-11-23 16:08:43 - dist.py:1372 - proc-action-file: my_proc.txt
+2018-11-23 16:08:43 - dist.py:1138 - --------------------------------------------------------------------------------
+2018-11-23 16:08:43 - dist.py:1141 - ignore this line: # BEFORE_PROC, FAIL_PROC, SUCC_PROC
+2018-11-23 16:08:43 - dist.py:1138 - --------------------------------------------------------------------------------
+2018-11-23 16:08:43 - dist.py:1082 - action: MOD - IPAY_QRY_004_04 - BEFORE_PROC - svc_pre_proc
+2018-11-23 16:08:43 - dist.py:1091 - proc: svc_pre_proc => 03016
+2018-11-23 16:08:43 - dist.py:1095 - MOD: [IPAY_QRY_004_04] => [DCSDBReConnect("PCIPDB's", "PCIPDB18")|ep_get()]
+2018-11-23 16:08:43 - dist.py:1106 - proc-id already exist, delete and insert: 03016
+2018-11-23 16:08:43 - dist.py:1033 - old-exprs:   DCSDBReConnect("PCIPDB's", "PCIPDB18")|ep_get()
+2018-11-23 16:08:43 - dist.py:1034 - old-procid:  03016
+2018-11-23 16:08:43 - dist.py:987 - event: [0] => [DCSDBReConnect("PCIPDB''s", "PCIPDB18")]
+2018-11-23 16:08:43 - dist.py:987 - event: [1] => [ep_get()]
+2018-11-23 16:08:43 - dist.py:1110 - MOD process done: 3
+2018-11-23 16:08:43 - dist.py:1125 - proc-sql: delete from est_event_expr where event_expr_id = '03016'
+2018-11-23 16:08:43 - dist.py:1125 - proc-sql: insert into est_event_expr (event_expr_id, event_expr_type, serial_no, event_expr_proc, event_expr_desc, comp_id) values ('03016', '0', '1', 'DCSDBReConnect("PCIPDB''s", "PCIPDB18")', '', '')
+2018-11-23 16:08:43 - dist.py:1125 - proc-sql: insert into est_event_expr (event_expr_id, event_expr_type, serial_no, event_expr_proc, event_expr_desc, comp_id) values ('03016', '0', '2', 'ep_get()', '', '')
+2018-11-23 16:08:43 - dist.py:1138 - --------------------------------------------------------------------------------
+2018-11-23 16:08:43 - dist.py:1082 - action: MOD - IPAY_QRY_004_04 - FAIL_PROC - svc_lost_proc
+2018-11-23 16:08:43 - dist.py:1091 - proc: svc_lost_proc => 03023
+2018-11-23 16:08:43 - dist.py:1095 - MOD: [IPAY_QRY_004_04] => [FIRED()|fail2()|]
+2018-11-23 16:08:43 - dist.py:1106 - proc-id already exist, delete and insert: 03023
+2018-11-23 16:08:43 - dist.py:1033 - old-exprs:   FIRED()|fail2()|
+2018-11-23 16:08:43 - dist.py:1034 - old-procid:  03023
+2018-11-23 16:08:43 - dist.py:987 - event: [0] => [FIRED()]
+2018-11-23 16:08:43 - dist.py:987 - event: [1] => [fail2()]
+2018-11-23 16:08:43 - dist.py:1110 - MOD process done: 3
+2018-11-23 16:08:43 - dist.py:1125 - proc-sql: delete from est_event_expr where event_expr_id = '03023'
+2018-11-23 16:08:43 - dist.py:1125 - proc-sql: insert into est_event_expr (event_expr_id, event_expr_type, serial_no, event_expr_proc, event_expr_desc, comp_id) values ('03023', '0', '1', 'FIRED()', '', '')
+2018-11-23 16:08:43 - dist.py:1125 - proc-sql: insert into est_event_expr (event_expr_id, event_expr_type, serial_no, event_expr_proc, event_expr_desc, comp_id) values ('03023', '0', '2', 'fail2()', '', '')
+2018-11-23 16:08:43 - dist.py:1138 - --------------------------------------------------------------------------------
+2018-11-23 16:08:43 - dist.py:1082 - action: MOD - IPAY_QRY_004_04 - SUCC_PROC - svc_succ_proc
+2018-11-23 16:08:43 - dist.py:1091 - proc: svc_succ_proc => 03017
+2018-11-23 16:08:43 - dist.py:1095 - MOD: [IPAY_QRY_004_04] => [GOOD()|good3()|good5()|]
+2018-11-23 16:08:43 - dist.py:1106 - proc-id already exist, delete and insert: 03017
+2018-11-23 16:08:43 - dist.py:1033 - old-exprs:   GOOD()|good3()|good5()|
+2018-11-23 16:08:43 - dist.py:1034 - old-procid:  03017
+2018-11-23 16:08:43 - dist.py:987 - event: [0] => [GOOD()]
+2018-11-23 16:08:43 - dist.py:987 - event: [1] => [good3()]
+2018-11-23 16:08:43 - dist.py:987 - event: [2] => [good5()]
+2018-11-23 16:08:43 - dist.py:1110 - MOD process done: 4
+2018-11-23 16:08:43 - dist.py:1125 - proc-sql: delete from est_event_expr where event_expr_id = '03017'
+2018-11-23 16:08:43 - dist.py:1125 - proc-sql: insert into est_event_expr (event_expr_id, event_expr_type, serial_no, event_expr_proc, event_expr_desc, comp_id) values ('03017', '0', '1', 'GOOD()', '', '')
+2018-11-23 16:08:43 - dist.py:1125 - proc-sql: insert into est_event_expr (event_expr_id, event_expr_type, serial_no, event_expr_proc, event_expr_desc, comp_id) values ('03017', '0', '2', 'good3()', '', '')
+2018-11-23 16:08:43 - dist.py:1125 - proc-sql: insert into est_event_expr (event_expr_id, event_expr_type, serial_no, event_expr_proc, event_expr_desc, comp_id) values ('03017', '0', '3', 'good5()', '', '')
+2018-11-23 16:08:43 - dist.py:1138 - --------------------------------------------------------------------------------
+2018-11-23 16:08:43 - dist.py:1082 - action: DEL - IPAY_QRY_004_04 - FAIL_PROC - svc_lost_proc
+2018-11-23 16:08:43 - dist.py:1091 - proc: svc_lost_proc => 03023
+2018-11-23 16:08:43 - dist.py:1112 - DEL: [IPAY_QRY_004_04] => [svc_lost_proc]
+2018-11-23 16:08:43 - dist.py:1125 - proc-sql: delete from est_event_expr where event_expr_id = '03023'
+2018-11-23 16:08:43 - dist.py:1138 - --------------------------------------------------------------------------------
+2018-11-23 16:08:43 - dist.py:1082 - action: DEL - IPAY_QRY_004_04 - BEFORE_PROC - svc_pre_proc
+2018-11-23 16:08:43 - dist.py:1091 - proc: svc_pre_proc => 03016
+2018-11-23 16:08:43 - dist.py:1112 - DEL: [IPAY_QRY_004_04] => [svc_pre_proc]
+2018-11-23 16:08:43 - dist.py:1125 - proc-sql: delete from est_event_expr where event_expr_id = '03016'
+2018-11-23 16:08:43 - dist.py:1152 - --------------------------------------------------------------------------------
+2018-11-23 16:08:43 - dist.py:1153 - --------------------------------------------------------------------------------
+2018-11-23 16:08:43 - dist.py:1154 - --------------------------------------------------------------------------------
+2018-11-23 16:08:43 - dist.py:1378 - set-svc-proc process file done
+2018-11-23 16:08:43 - dist.py:1382 - set-svc-proc commit done
+2018-11-23 16:10:00 - sailog.py:74 - 
+/_/_/_/_/_/_/_/_/_/_/_/_/_/_/_/_/_/_/_/_/_/_/_/_/_/_/_/_/_/_/_/_/_/_/_/_/_/_/_/_/_/
+2018-11-23 16:10:00 - dist.py:1433 - db-name: PCIP
+2018-11-23 16:10:00 - dist.py:1476 - to set_proc
+2018-11-23 16:10:00 - dist.py:1369 - dist_set_proc: --- RES and LOG ---
+2018-11-23 16:10:00 - dist.py:1372 - proc-action-file: my_proc.txt
+2018-11-23 16:10:00 - dist.py:1138 - --------------------------------------------------------------------------------
+2018-11-23 16:10:00 - dist.py:1141 - ignore this line: # BEFORE_PROC, FAIL_PROC, SUCC_PROC
+2018-11-23 16:10:00 - dist.py:1138 - --------------------------------------------------------------------------------
+2018-11-23 16:10:00 - dist.py:1082 - action: MOD - IPAY_QRY_004_04 - BEFORE_PROC - svc_pre_proc
+2018-11-23 16:10:00 - dist.py:1091 - proc: svc_pre_proc => 
+2018-11-23 16:10:00 - dist.py:1095 - MOD: [IPAY_QRY_004_04] => [DCSDBReConnect("PCIPDB's", "PCIPDB18")|ep_get()]
+2018-11-23 16:10:00 - dist.py:1099 - proc-id not exist, create it
+2018-11-23 16:10:00 - dist.py:998 - new-exprs:   DCSDBReConnect("PCIPDB's", "PCIPDB18")|ep_get()
+2018-11-23 16:10:00 - dist.py:999 - new-column:  svc_pre_proc
+2018-11-23 16:10:00 - dist.py:1000 - new-svc:     IPAY_QRY_004_04
+2018-11-23 16:10:00 - dist.py:987 - event: [0] => [DCSDBReConnect("PCIPDB''s", "PCIPDB18")]
+2018-11-23 16:10:00 - dist.py:987 - event: [1] => [ep_get()]
+2018-11-23 16:10:00 - dist.py:1110 - MOD process done: 3
+2018-11-23 16:10:00 - dist.py:1125 - proc-sql: insert into est_event_expr (event_expr_id, event_expr_type, serial_no, event_expr_proc, event_expr_desc, comp_id) values ('03024', '0', '1', 'DCSDBReConnect("PCIPDB''s", "PCIPDB18")', '', '')
+2018-11-23 16:10:00 - dist.py:1125 - proc-sql: insert into est_event_expr (event_expr_id, event_expr_type, serial_no, event_expr_proc, event_expr_desc, comp_id) values ('03024', '0', '2', 'ep_get()', '', '')
+2018-11-23 16:10:00 - dist.py:1125 - proc-sql: update est_svc_logic set svc_pre_proc='03024', lst_mod_date_time='20181123-161000', lst_mod_user='yase' where svc_name = 'IPAY_QRY_004_04'
+2018-11-23 16:10:00 - dist.py:1138 - --------------------------------------------------------------------------------
+2018-11-23 16:10:00 - dist.py:1082 - action: MOD - IPAY_QRY_004_04 - FAIL_PROC - svc_lost_proc
+2018-11-23 16:10:00 - dist.py:1091 - proc: svc_lost_proc => 03023
+2018-11-23 16:10:00 - dist.py:1095 - MOD: [IPAY_QRY_004_04] => [FIRED()|fail2()|]
+2018-11-23 16:10:00 - dist.py:1106 - proc-id already exist, delete and insert: 03023
+2018-11-23 16:10:00 - dist.py:1033 - old-exprs:   FIRED()|fail2()|
+2018-11-23 16:10:00 - dist.py:1034 - old-procid:  03023
+2018-11-23 16:10:00 - dist.py:987 - event: [0] => [FIRED()]
+2018-11-23 16:10:00 - dist.py:987 - event: [1] => [fail2()]
+2018-11-23 16:10:00 - dist.py:1110 - MOD process done: 3
+2018-11-23 16:10:00 - dist.py:1125 - proc-sql: delete from est_event_expr where event_expr_id = '03023'
+2018-11-23 16:10:00 - dist.py:1125 - proc-sql: insert into est_event_expr (event_expr_id, event_expr_type, serial_no, event_expr_proc, event_expr_desc, comp_id) values ('03023', '0', '1', 'FIRED()', '', '')
+2018-11-23 16:10:00 - dist.py:1125 - proc-sql: insert into est_event_expr (event_expr_id, event_expr_type, serial_no, event_expr_proc, event_expr_desc, comp_id) values ('03023', '0', '2', 'fail2()', '', '')
+2018-11-23 16:10:00 - dist.py:1138 - --------------------------------------------------------------------------------
+2018-11-23 16:10:00 - dist.py:1082 - action: MOD - IPAY_QRY_004_04 - SUCC_PROC - svc_succ_proc
+2018-11-23 16:10:00 - dist.py:1091 - proc: svc_succ_proc => 03017
+2018-11-23 16:10:00 - dist.py:1095 - MOD: [IPAY_QRY_004_04] => [GOOD()|good3()|good5()|]
+2018-11-23 16:10:00 - dist.py:1106 - proc-id already exist, delete and insert: 03017
+2018-11-23 16:10:00 - dist.py:1033 - old-exprs:   GOOD()|good3()|good5()|
+2018-11-23 16:10:00 - dist.py:1034 - old-procid:  03017
+2018-11-23 16:10:00 - dist.py:987 - event: [0] => [GOOD()]
+2018-11-23 16:10:00 - dist.py:987 - event: [1] => [good3()]
+2018-11-23 16:10:00 - dist.py:987 - event: [2] => [good5()]
+2018-11-23 16:10:00 - dist.py:1110 - MOD process done: 4
+2018-11-23 16:10:00 - dist.py:1125 - proc-sql: delete from est_event_expr where event_expr_id = '03017'
+2018-11-23 16:10:00 - dist.py:1125 - proc-sql: insert into est_event_expr (event_expr_id, event_expr_type, serial_no, event_expr_proc, event_expr_desc, comp_id) values ('03017', '0', '1', 'GOOD()', '', '')
+2018-11-23 16:10:00 - dist.py:1125 - proc-sql: insert into est_event_expr (event_expr_id, event_expr_type, serial_no, event_expr_proc, event_expr_desc, comp_id) values ('03017', '0', '2', 'good3()', '', '')
+2018-11-23 16:10:00 - dist.py:1125 - proc-sql: insert into est_event_expr (event_expr_id, event_expr_type, serial_no, event_expr_proc, event_expr_desc, comp_id) values ('03017', '0', '3', 'good5()', '', '')
+2018-11-23 16:10:00 - dist.py:1138 - --------------------------------------------------------------------------------
+2018-11-23 16:10:00 - dist.py:1082 - action: DEL - IPAY_QRY_004_04 - FAIL_PROC - svc_lost_proc
+2018-11-23 16:10:00 - dist.py:1091 - proc: svc_lost_proc => 03023
+2018-11-23 16:10:00 - dist.py:1112 - DEL: [IPAY_QRY_004_04] => [svc_lost_proc]
+2018-11-23 16:10:00 - dist.py:1125 - proc-sql: delete from est_event_expr where event_expr_id = '03023'
+2018-11-23 16:10:00 - dist.py:1138 - --------------------------------------------------------------------------------
+2018-11-23 16:10:00 - dist.py:1082 - action: DEL - IPAY_QRY_004_04 - BEFORE_PROC - svc_pre_proc
+2018-11-23 16:10:00 - dist.py:1091 - proc: svc_pre_proc => 03024
+2018-11-23 16:10:00 - dist.py:1112 - DEL: [IPAY_QRY_004_04] => [svc_pre_proc]
+2018-11-23 16:10:00 - dist.py:1125 - proc-sql: delete from est_event_expr where event_expr_id = '03024'
+2018-11-23 16:10:00 - dist.py:1152 - --------------------------------------------------------------------------------
+2018-11-23 16:10:00 - dist.py:1153 - --------------------------------------------------------------------------------
+2018-11-23 16:10:00 - dist.py:1154 - --------------------------------------------------------------------------------
+2018-11-23 16:10:00 - dist.py:1378 - set-svc-proc process file done
+2018-11-23 16:10:00 - dist.py:1382 - set-svc-proc commit done
+2018-11-23 16:11:17 - sailog.py:74 - 
+/_/_/_/_/_/_/_/_/_/_/_/_/_/_/_/_/_/_/_/_/_/_/_/_/_/_/_/_/_/_/_/_/_/_/_/_/_/_/_/_/_/
+2018-11-23 16:11:17 - dist.py:1433 - db-name: PCIP
+2018-11-23 16:11:17 - dist.py:1476 - to set_proc
+2018-11-23 16:11:17 - dist.py:1369 - dist_set_proc: --- RES and LOG ---
+2018-11-23 16:11:17 - dist.py:1372 - proc-action-file: my_proc.txt
+2018-11-23 16:11:17 - dist.py:1138 - --------------------------------------------------------------------------------
+2018-11-23 16:11:17 - dist.py:1141 - ignore this line: # BEFORE_PROC, FAIL_PROC, SUCC_PROC
+2018-11-23 16:11:17 - dist.py:1138 - --------------------------------------------------------------------------------
+2018-11-23 16:11:17 - dist.py:1082 - action: MOD - IPAY_QRY_004_04 - BEFORE_PROC - svc_pre_proc
+2018-11-23 16:11:17 - dist.py:1091 - proc: svc_pre_proc => 03024
+2018-11-23 16:11:17 - dist.py:1095 - MOD: [IPAY_QRY_004_04] => [DCSDBReConnect("PCIPDB's", "PCIPDB18")|ep_get()]
+2018-11-23 16:11:17 - dist.py:1106 - proc-id already exist, delete and insert: 03024
+2018-11-23 16:11:17 - dist.py:1033 - old-exprs:   DCSDBReConnect("PCIPDB's", "PCIPDB18")|ep_get()
+2018-11-23 16:11:17 - dist.py:1034 - old-procid:  03024
+2018-11-23 16:11:17 - dist.py:987 - event: [0] => [DCSDBReConnect("PCIPDB''s", "PCIPDB18")]
+2018-11-23 16:11:17 - dist.py:987 - event: [1] => [ep_get()]
+2018-11-23 16:11:17 - dist.py:1110 - MOD process done: 3
+2018-11-23 16:11:17 - dist.py:1125 - proc-sql: delete from est_event_expr where event_expr_id = '03024'
+2018-11-23 16:11:17 - dist.py:1125 - proc-sql: insert into est_event_expr (event_expr_id, event_expr_type, serial_no, event_expr_proc, event_expr_desc, comp_id) values ('03024', '0', '1', 'DCSDBReConnect("PCIPDB''s", "PCIPDB18")', '', '')
+2018-11-23 16:11:17 - dist.py:1125 - proc-sql: insert into est_event_expr (event_expr_id, event_expr_type, serial_no, event_expr_proc, event_expr_desc, comp_id) values ('03024', '0', '2', 'ep_get()', '', '')
+2018-11-23 16:11:17 - dist.py:1138 - --------------------------------------------------------------------------------
+2018-11-23 16:11:17 - dist.py:1082 - action: MOD - IPAY_QRY_004_04 - FAIL_PROC - svc_lost_proc
+2018-11-23 16:11:17 - dist.py:1091 - proc: svc_lost_proc => 03023
+2018-11-23 16:11:17 - dist.py:1095 - MOD: [IPAY_QRY_004_04] => [FIRED()|fail2()|]
+2018-11-23 16:11:17 - dist.py:1106 - proc-id already exist, delete and insert: 03023
+2018-11-23 16:11:17 - dist.py:1033 - old-exprs:   FIRED()|fail2()|
+2018-11-23 16:11:17 - dist.py:1034 - old-procid:  03023
+2018-11-23 16:11:17 - dist.py:987 - event: [0] => [FIRED()]
+2018-11-23 16:11:17 - dist.py:987 - event: [1] => [fail2()]
+2018-11-23 16:11:17 - dist.py:1110 - MOD process done: 3
+2018-11-23 16:11:17 - dist.py:1125 - proc-sql: delete from est_event_expr where event_expr_id = '03023'
+2018-11-23 16:11:17 - dist.py:1125 - proc-sql: insert into est_event_expr (event_expr_id, event_expr_type, serial_no, event_expr_proc, event_expr_desc, comp_id) values ('03023', '0', '1', 'FIRED()', '', '')
+2018-11-23 16:11:17 - dist.py:1125 - proc-sql: insert into est_event_expr (event_expr_id, event_expr_type, serial_no, event_expr_proc, event_expr_desc, comp_id) values ('03023', '0', '2', 'fail2()', '', '')
+2018-11-23 16:11:17 - dist.py:1138 - --------------------------------------------------------------------------------
+2018-11-23 16:11:17 - dist.py:1082 - action: MOD - IPAY_QRY_004_04 - SUCC_PROC - svc_succ_proc
+2018-11-23 16:11:17 - dist.py:1091 - proc: svc_succ_proc => 03017
+2018-11-23 16:11:17 - dist.py:1095 - MOD: [IPAY_QRY_004_04] => [GOOD()|good3()|good5()|]
+2018-11-23 16:11:17 - dist.py:1106 - proc-id already exist, delete and insert: 03017
+2018-11-23 16:11:17 - dist.py:1033 - old-exprs:   GOOD()|good3()|good5()|
+2018-11-23 16:11:17 - dist.py:1034 - old-procid:  03017
+2018-11-23 16:11:17 - dist.py:987 - event: [0] => [GOOD()]
+2018-11-23 16:11:17 - dist.py:987 - event: [1] => [good3()]
+2018-11-23 16:11:17 - dist.py:987 - event: [2] => [good5()]
+2018-11-23 16:11:17 - dist.py:1110 - MOD process done: 4
+2018-11-23 16:11:17 - dist.py:1125 - proc-sql: delete from est_event_expr where event_expr_id = '03017'
+2018-11-23 16:11:17 - dist.py:1125 - proc-sql: insert into est_event_expr (event_expr_id, event_expr_type, serial_no, event_expr_proc, event_expr_desc, comp_id) values ('03017', '0', '1', 'GOOD()', '', '')
+2018-11-23 16:11:17 - dist.py:1125 - proc-sql: insert into est_event_expr (event_expr_id, event_expr_type, serial_no, event_expr_proc, event_expr_desc, comp_id) values ('03017', '0', '2', 'good3()', '', '')
+2018-11-23 16:11:17 - dist.py:1125 - proc-sql: insert into est_event_expr (event_expr_id, event_expr_type, serial_no, event_expr_proc, event_expr_desc, comp_id) values ('03017', '0', '3', 'good5()', '', '')
+2018-11-23 16:11:17 - dist.py:1138 - --------------------------------------------------------------------------------
+2018-11-23 16:11:17 - dist.py:1082 - action: DEL - IPAY_QRY_004_04 - FAIL_PROC - svc_lost_proc
+2018-11-23 16:11:17 - dist.py:1091 - proc: svc_lost_proc => 03023
+2018-11-23 16:11:17 - dist.py:1112 - DEL: [IPAY_QRY_004_04] => [svc_lost_proc]
+2018-11-23 16:11:17 - dist.py:1125 - proc-sql: delete from est_event_expr where event_expr_id = '03023'
+2018-11-23 16:11:17 - dist.py:1138 - --------------------------------------------------------------------------------
+2018-11-23 16:11:17 - dist.py:1141 - ignore this line: #DEL,,, IPAY_QRY_004_04,,, BEFORE_PROC
+2018-11-23 16:11:17 - dist.py:1152 - --------------------------------------------------------------------------------
+2018-11-23 16:11:17 - dist.py:1153 - --------------------------------------------------------------------------------
+2018-11-23 16:11:17 - dist.py:1154 - --------------------------------------------------------------------------------
+2018-11-23 16:11:17 - dist.py:1378 - set-svc-proc process file done
+2018-11-23 16:11:17 - dist.py:1382 - set-svc-proc commit done
+2018-11-23 16:12:37 - sailog.py:74 - 
+/_/_/_/_/_/_/_/_/_/_/_/_/_/_/_/_/_/_/_/_/_/_/_/_/_/_/_/_/_/_/_/_/_/_/_/_/_/_/_/_/_/
+2018-11-23 16:12:37 - dist.py:1433 - db-name: PCIP
+2018-11-23 16:12:37 - dist.py:1476 - to set_proc
+2018-11-23 16:12:37 - dist.py:1369 - dist_set_proc: --- RES and LOG ---
+2018-11-23 16:12:37 - dist.py:1372 - proc-action-file: my_proc.txt
+2018-11-23 16:12:37 - dist.py:1138 - --------------------------------------------------------------------------------
+2018-11-23 16:12:37 - dist.py:1141 - ignore this line: # BEFORE_PROC, FAIL_PROC, SUCC_PROC
+2018-11-23 16:12:37 - dist.py:1138 - --------------------------------------------------------------------------------
+2018-11-23 16:12:37 - dist.py:1082 - action: MOD - IPAY_QRY_004_04 - BEFORE_PROC - svc_pre_proc
+2018-11-23 16:12:37 - dist.py:1091 - proc: svc_pre_proc => 03024
+2018-11-23 16:12:37 - dist.py:1095 - MOD: [IPAY_QRY_004_04] => [DCSDBReConnect("PCIPDB", "PCIPDB18")|]
+2018-11-23 16:12:37 - dist.py:1106 - proc-id already exist, delete and insert: 03024
+2018-11-23 16:12:37 - dist.py:1033 - old-exprs:   DCSDBReConnect("PCIPDB", "PCIPDB18")|
+2018-11-23 16:12:37 - dist.py:1034 - old-procid:  03024
+2018-11-23 16:12:37 - dist.py:987 - event: [0] => [DCSDBReConnect("PCIPDB", "PCIPDB18")]
+2018-11-23 16:12:37 - dist.py:1110 - MOD process done: 2
+2018-11-23 16:12:37 - dist.py:1125 - proc-sql: delete from est_event_expr where event_expr_id = '03024'
+2018-11-23 16:12:37 - dist.py:1125 - proc-sql: insert into est_event_expr (event_expr_id, event_expr_type, serial_no, event_expr_proc, event_expr_desc, comp_id) values ('03024', '0', '1', 'DCSDBReConnect("PCIPDB", "PCIPDB18")', '', '')
+2018-11-23 16:12:37 - dist.py:1138 - --------------------------------------------------------------------------------
+2018-11-23 16:12:37 - dist.py:1082 - action: MOD - IPAY_QRY_004_04 - FAIL_PROC - svc_lost_proc
+2018-11-23 16:12:37 - dist.py:1091 - proc: svc_lost_proc => 03023
+2018-11-23 16:12:37 - dist.py:1095 - MOD: [IPAY_QRY_004_04] => [FIRED()|]
+2018-11-23 16:12:37 - dist.py:1106 - proc-id already exist, delete and insert: 03023
+2018-11-23 16:12:37 - dist.py:1033 - old-exprs:   FIRED()|
+2018-11-23 16:12:37 - dist.py:1034 - old-procid:  03023
+2018-11-23 16:12:37 - dist.py:987 - event: [0] => [FIRED()]
+2018-11-23 16:12:37 - dist.py:1110 - MOD process done: 2
+2018-11-23 16:12:37 - dist.py:1125 - proc-sql: delete from est_event_expr where event_expr_id = '03023'
+2018-11-23 16:12:37 - dist.py:1125 - proc-sql: insert into est_event_expr (event_expr_id, event_expr_type, serial_no, event_expr_proc, event_expr_desc, comp_id) values ('03023', '0', '1', 'FIRED()', '', '')
+2018-11-23 16:12:37 - dist.py:1138 - --------------------------------------------------------------------------------
+2018-11-23 16:12:37 - dist.py:1082 - action: MOD - IPAY_QRY_004_04 - SUCC_PROC - svc_succ_proc
+2018-11-23 16:12:37 - dist.py:1091 - proc: svc_succ_proc => 03017
+2018-11-23 16:12:37 - dist.py:1095 - MOD: [IPAY_QRY_004_04] => [GOOD()|]
+2018-11-23 16:12:37 - dist.py:1106 - proc-id already exist, delete and insert: 03017
+2018-11-23 16:12:37 - dist.py:1033 - old-exprs:   GOOD()|
+2018-11-23 16:12:37 - dist.py:1034 - old-procid:  03017
+2018-11-23 16:12:37 - dist.py:987 - event: [0] => [GOOD()]
+2018-11-23 16:12:37 - dist.py:1110 - MOD process done: 2
+2018-11-23 16:12:37 - dist.py:1125 - proc-sql: delete from est_event_expr where event_expr_id = '03017'
+2018-11-23 16:12:37 - dist.py:1125 - proc-sql: insert into est_event_expr (event_expr_id, event_expr_type, serial_no, event_expr_proc, event_expr_desc, comp_id) values ('03017', '0', '1', 'GOOD()', '', '')
+2018-11-23 16:12:37 - dist.py:1138 - --------------------------------------------------------------------------------
+2018-11-23 16:12:37 - dist.py:1082 - action: DEL - IPAY_QRY_004_04 - FAIL_PROC - svc_lost_proc
+2018-11-23 16:12:37 - dist.py:1091 - proc: svc_lost_proc => 03023
+2018-11-23 16:12:37 - dist.py:1112 - DEL: [IPAY_QRY_004_04] => [svc_lost_proc]
+2018-11-23 16:12:37 - dist.py:1125 - proc-sql: delete from est_event_expr where event_expr_id = '03023'
+2018-11-23 16:12:37 - dist.py:1152 - --------------------------------------------------------------------------------
+2018-11-23 16:12:37 - dist.py:1153 - --------------------------------------------------------------------------------
+2018-11-23 16:12:37 - dist.py:1154 - --------------------------------------------------------------------------------
+2018-11-23 16:12:37 - dist.py:1378 - set-svc-proc process file done
+2018-11-23 16:12:37 - dist.py:1382 - set-svc-proc commit done

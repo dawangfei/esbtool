@@ -36,6 +36,8 @@ class MyCtx():
     rule_name      = ''
     dta_id         = ''
     rule_id        = ''
+
+    user_defined   = ''
     ##################################################################
     new_ala_name = ''
     new_svc_name = ''
