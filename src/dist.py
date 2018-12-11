@@ -1194,6 +1194,7 @@ def dist_dup_ala(_ala_name):
 
     for seq in range(start, last+1):
         log_debug('seq: %d', seq)
+        print('>>> processing (%s_%s)' % (_ala_name, dist_generate_suffix(seq)))
         rv = dist_duplicate_sub_bus(_ala_name, seq)
         if rv < 0:
             print("error: dist_duplicate_sub_bus: '%s, %s'" % (_ala_name, seq))
@@ -1238,6 +1239,7 @@ def dist_dup_svc(_ala_name, _svc_logics):
 
     for seq in range(start, last+1):
         log_debug('seq: %d', seq)
+        print('>>> processing (%s_%s)' % (_ala_name, dist_generate_suffix(seq)))
         rv = dist_duplicate_svc_logic(_ala_name, _svc_logics, seq)
         if rv < 0:
             print("error: dist_duplicate_svc_logic: '%s, %s, %d'" % (_ala_name, _svc_logics, seq))
@@ -1309,6 +1311,7 @@ def dist_set_num():
     for seq in range(start, last+1):
         log_debug('-' * 80)
         log_debug('seq: %d', seq)
+        print('>>> processing (%s_%s)' % (obj_name, dist_generate_suffix(seq)))
         rv = dist_set_object_num(obj_name, seq, inst_num, inst_max)
         if rv < 0:
             log_error("error: dist_set_object_num: '%s, %s, %d'", obj_name, seq)
